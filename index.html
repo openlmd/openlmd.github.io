@@ -9,18 +9,17 @@
     <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
     <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
 
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
+    <link rel="icon" type="image/png" href="images/favicon.png">
 
-    <title>OpenLMD by openlmd</title>
+    <title>OpenLMD by AIMEN Technology Center</title>
   </head>
 
   <body>
     <header>
       <div class="inner">
-        <h1>OpenLMD</h1>
-        <h2></h2>
+        <!-- <h1>OpenLMD</h1> -->
+        <img src="images/openlmd.png" width="300px"/>
+        <h2>Opening the next step on Laser Metal Deposition technology</h2>
         <a href="https://github.com/openlmd" class="button"><small>Source Code on</small> GitHub</a>
       </div>
     </header>
@@ -28,31 +27,23 @@
     <div id="content-wrapper">
       <div class="inner clearfix">
         <section id="main-content">
-          <h2>
-<a id="welcome-to-open-laser-metal-deposition" class="anchor" href="#welcome-to-open-laser-metal-deposition" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Welcome to Open Laser Metal Deposition</h2>
+          <h2><a name="openlmd"></a>Welcome to Open Laser Metal Deposition</h2>
 
 <p>OpenLMD (Open Laser Metal Deposition) is a set of software components
-  which define a modular and open architecture to demonstrate last advances
-  on laser processing monitoring and control systems. Built on ROS
-  (<a href="http://www.ros.org/">Robot Operating System</a>), the modular
-  approach provided in OpenLMD pursues the deployment of new algorithms beyond
-  the state-of-the-art in real industrial facilities, fixing common
-  interoperability and standarization issues.</p>
+  provided to demonstrate last advances on laser processing control systems.
+  Built on ROS (<a href="http://www.ros.org/">Robot Operating System</a>),
+  the modular approach provided in OpenLMD pursues the deployment of new
+  algorithms beyond the state-of-the-art in real facilities, fixing common
+  interoperability and standarization issues. Moreover, it takes advantage from
+  open source and most advanced robotics, vision, and machine learning research.</p>
 
-<p>Focus on Laser Metal Deposition (LMD) to build and repair large and complex
-  metallic parts, it takes advantage from open source and from most advanced
-  robotic, vision, and machine learning research towards a zero defects
-  manufacturing.</p>
-
-  <!-- Aúna desarrollos de distintos proyectos, permitiendo interoperar distintos equipos
-  y desplegar esquemas de control complejos a través del empleo de una arquitectura
-  multiproceso basada en ROS (Robotic Operating System). Además, proporciona mecanismos
-  para el registro de datos multimodales durante el funcionamiento del proceso, permitiendo
-  su empaquetado (como dataframes) y envío a una infraestructura de Big Data. -->
-
-<p>OpenLMD was born from AIMEN's development efforts on several projects, mainly
-  driven by the MAShES project, and PROPER and CyPLAM assesments from LASHARE
-  and FORTISSIMO 2.</p>
+<p>OpenLMD arises from AIMEN's development efforts on several Laser Metal
+  Deposition (LMD) projects, focus on building and repairing large and complex
+  metal parts - with no defects -. These efforts have been mainly driven by the
+  <a href="http://www.mashesproject.eu/">MAShES project</a>, the PROPER assesment
+  from the <a href="http://www.lashare.eu/">LASHARE project</a> and the CyPLAM
+  experiment from the <a href="http://www.fortissimo-project.eu/"> FORTISSIMO2
+  project</a>.</p>
 
 <h3><a name="introduction"></a>Introduction</h3>
 
@@ -70,6 +61,58 @@
   components. This makes LMD a promising technique for retrofitting of current
   industrial facilities towards the digital factory (Industrie 4.0).</p>
 
+  <!-- La necesidad de interoperar distintos equipos dificulta el despliegue de
+  esquemas de control complejos. A través del empleo de una arquitectura
+  multiproceso basada en ROS (Robotic Operating System) se pueden mitigar ambos
+  problemas. Además, esta arquitectura proporciona mecanismos para el registro
+  de datos multimodales durante el funcionamiento del proceso, permitiendo
+  su empaquetado (como dataframes) y envío a una infraestructura de Big Data. -->
+
+<h3><a name="subprojects"></a>Subprojects</h3>
+
+<p>MAShES aims to develop a multimodal embeded imaging system for RT close-loop
+  control for LMD systems.</p>
+
+<p>PROPER aims to develop an 3D geometrical control system for an automatic
+  repair of large and complex parts using LMD robotized cells.</p>
+
+<p>CyPLAM aims to develop an adaptive parametric control system for LMD,
+  based on Big Data and Deep Learning.</p>
+
+<ul>
+  <li>MAShES: <a href="https://github.com/openlmd/mashes">https://github.com/openlmd/mashes</a></li>
+  <li>PROPER: <a href="https://github.com/openlmd/proper">https://github.com/openlmd/proper</a></li>
+  <li>CyPLAM: <a href="https://github.com/openlmd/cyplam">https://github.com/openlmd/cyplam</a></li>
+</ul>
+
+<p>Some datasets for testing and development are been shared through the
+  ZENODO platform in <a href="https://zenodo.org/collection/user-mashes">
+    https://zenodo.org/collection/user-mashes</a>.</p>
+
+<h3><a name="geometry"></a>3D Geometrical Monitoring</h3>
+
+<div style="width: 100%; height: 0px; position: relative; padding-bottom: 75.0019%;">
+  <iframe src="https://www.slideshare.net/slideshow/embed_code/key/3REiTWgJECn3pL"
+  frameborder="0" allowfullscreen style="width: 100%; height: 100%; position: absolute;"></iframe>
+</div>
+<p><strong>
+  <a href="http://www.slideshare.net/JorgeRodrguezArajo/rosbased-3d-online-monitoring-for-lmd-robotized-cells"
+  title="ROS-Based 3D On-Line Monitoring for LMD Robotized Cells" target="_blank">
+  ROS-Based 3D On-Line Monitoring for LMD Robotized Cells</a> </strong> from <strong>
+    <a href="http://www.slideshare.net/JorgeRodrguezArajo" target="_blank">Jorge Rodríguez-Araújo</a>
+</strong></p>
+
+<blockquote>
+On-line scanning without robot movement restrintions.
+<figcaption class="attribution">— <a href="http://linkedin.com/in/jraraujo">Jorge Rodríguez-Araújo</a>,
+  Senior Reasearch Engineer at <a href="http://www.aimen.es/">AIMEN Technology Center</a></figcaption>
+</blockquote>
+
+<h3><a name="started"></a>Getting Started</h3>
+
+<p>Launching the MAShES <code>workcell</code> environment:</p>
+<pre><code>$ roslaunch mashes_robviz robviz.launch</code></pre>
+
 <h3><a name="contact"></a>Contact</h3>
 
 <p>Jorge Rodríguez-Araújo (<a href="https://github.com/jraraujo-aimen" class="user-mention">@jraraujo-aimen</a>)</p>
@@ -82,12 +125,14 @@
         <aside id="sidebar">
           <ol>
           <li><a href="#introduction">Introduction</a></li>
+          <li><a href="#subprojects">Subprojects</a></li>
+          <li><a href="#geometry">Geometry</a></li>
+          <li><a href="#started">Started</a></li>
           <li><a href="#contact">Contact</a></li>
           </ol>
         </aside>
       </div>
     </div>
-
 
   </body>
 </html>
