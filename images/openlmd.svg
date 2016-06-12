@@ -10,7 +10,7 @@
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    width="240"
-   height="60"
+   height="70"
    id="svg2"
    version="1.1"
    inkscape:version="0.48.4 r9939"
@@ -24,9 +24,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.4"
-     inkscape:cx="-61.838674"
-     inkscape:cy="-65.99722"
+     inkscape:zoom="0.98994949"
+     inkscape:cx="139.07889"
+     inkscape:cy="-82.812062"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="true"
@@ -64,12 +64,13 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(0,-992.36218)">
+     transform="translate(0,-982.36218)">
     <g
        id="g3005"
        inkscape:export-filename="/home/jorge/openlmd.github.io/images/openlmd.png"
        inkscape:export-xdpi="360"
-       inkscape:export-ydpi="360">
+       inkscape:export-ydpi="360"
+       transform="translate(0,-5.0000026)">
       <rect
          ry="9.9999971"
          inkscape:export-ydpi="300"
@@ -80,107 +81,29 @@
          height="70"
          width="240"
          id="rect3888"
-         style="fill:#ffffff;fill-opacity:1;stroke:none" />
-      <g
-         inkscape:export-ydpi="300"
-         inkscape:export-xdpi="300"
-         inkscape:export-filename="/home/jorge/Desktop/openlmd.png"
-         transform="matrix(0.99038424,0,0,1,11.329975,-283.05419)"
-         id="g3966">
-        <text
-           xml:space="preserve"
-           style="font-size:48px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Source Sans Pro;-inkscape-font-specification:Source Sans Pro"
-           x="-3.8388877"
-           y="1322.9963"
-           id="text2985"
-           sodipodi:linespacing="125%"><tspan
-             sodipodi:role="line"
-             id="tspan2987"
-             x="-3.8388877"
-             y="1322.9963"
-             style="font-size:48px;font-style:normal;fill:#1a1a1a;-inkscape-font-specification:Source Sans Pro">Open</tspan></text>
-        <g
-           transform="translate(7.3843322,0)"
-           id="g3114">
-          <text
-             sodipodi:linespacing="125%"
-             id="text2989"
-             y="1322.9963"
-             x="96.16111"
-             style="font-size:48px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#3073c2;fill-opacity:1;stroke:none;font-family:Source Sans Pro;-inkscape-font-specification:Sans Bold"
-             xml:space="preserve"><tspan
-               style="font-size:64px;font-style:normal;font-weight:bold;fill:#3073c2;fill-opacity:1;-inkscape-font-specification:Source Sans Pro Bold"
-               y="1322.9963"
-               x="96.16111"
-               id="tspan2991"
-               sodipodi:role="line">L</tspan></text>
-          <path
-             sodipodi:nodetypes="ccccc"
-             inkscape:connector-curvature="0"
-             id="rect3802"
-             d="m 107.08911,1277.9964 5,0 0,50 -5,0 z"
-             style="font-size:48px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Source Sans Pro;-inkscape-font-specification:Sans Bold" />
-        </g>
-        <g
-           transform="translate(5.6961532,0)"
-           id="g3108">
-          <text
-             sodipodi:linespacing="125%"
-             id="text2989-0"
-             y="1322.9963"
-             x="131.16112"
-             style="font-size:48px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#3073c2;fill-opacity:1;stroke:none;font-family:Source Sans Pro;-inkscape-font-specification:Sans Bold"
-             xml:space="preserve"><tspan
-               style="font-size:64px;font-style:normal;font-weight:bold;fill:#3073c2;fill-opacity:1;-inkscape-font-specification:Source Sans Pro Bold"
-               y="1322.9963"
-               x="131.16112"
-               id="tspan2991-8"
-               sodipodi:role="line">M</tspan></text>
-          <path
-             sodipodi:nodetypes="ccccc"
-             inkscape:connector-curvature="0"
-             id="rect3802-8"
-             d="m 142.08912,1277.9964 5,0 0,50 -5,0 z"
-             style="font-size:48px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Source Sans Pro;-inkscape-font-specification:Sans Bold" />
-          <path
-             sodipodi:nodetypes="ccccc"
-             inkscape:connector-curvature="0"
-             id="rect3802-3"
-             d="m 164.00112,1277.9964 5,0 0,50 -5,0 z"
-             style="font-size:48px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Source Sans Pro;-inkscape-font-specification:Sans Bold" />
-        </g>
-        <g
-           transform="translate(2.0000015,0)"
-           id="g3102">
-          <text
-             sodipodi:linespacing="125%"
-             id="text2989-08"
-             y="1322.9963"
-             x="181.16112"
-             style="font-size:48px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#3073c2;fill-opacity:1;stroke:none;font-family:Source Sans Pro;-inkscape-font-specification:Sans Bold"
-             xml:space="preserve"><tspan
-               style="font-size:64px;font-style:normal;font-weight:bold;fill:#3073c2;fill-opacity:1;-inkscape-font-specification:Source Sans Pro Bold"
-               y="1322.9963"
-               x="181.16112"
-               id="tspan2991-0"
-               sodipodi:role="line">D</tspan></text>
-          <path
-             sodipodi:nodetypes="ccccc"
-             inkscape:connector-curvature="0"
-             id="rect3802-33"
-             d="m 192.08912,1277.9964 5,0 0,50 -5,0 z"
-             style="font-size:48px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Source Sans Pro;-inkscape-font-specification:Sans Bold" />
-          <path
-             sodipodi:nodetypes="ccccc"
-             inkscape:connector-curvature="0"
-             id="rect3802-4"
-             d="m 207.79312,1277.9964 5,0 0,50 -5,0 z"
-             style="font-size:48px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Source Sans Pro;-inkscape-font-specification:Sans Bold" />
-        </g>
-      </g>
+         style="fill:#3073c0;fill-opacity:1;stroke:none" />
+      <text
+         xml:space="preserve"
+         style="font-size:48px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Source Sans Pro;-inkscape-font-specification:Source Sans Pro"
+         x="12.186438"
+         y="1040.5222"
+         id="text3008"
+         sodipodi:linespacing="125%"
+         inkscape:export-filename="/home/jorge/openlmd.github.io/images/openlmd.png"
+         inkscape:export-xdpi="360"
+         inkscape:export-ydpi="360"><tspan
+           sodipodi:role="line"
+           id="tspan3010"
+           x="12.186438"
+           y="1040.5222"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Source Sans Pro;-inkscape-font-specification:Source Sans Pro"><tspan
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#1a1a1a;font-family:Source Sans Pro;-inkscape-font-specification:Source Sans Pro"
+             id="tspan3806">Open</tspan><tspan
+             style="font-size:56px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;fill:#ffffff;fill-opacity:1;font-family:Source Sans Pro;-inkscape-font-specification:Source Sans Pro Bold"
+             id="tspan3012">LMD</tspan></tspan></text>
     </g>
     <g
-       transform="matrix(0.99038424,0,0,1,-211.01129,-195.63422)"
+       transform="matrix(0.99038424,0,0,1,-206.01129,-200.63422)"
        id="g3114-3"
        inkscape:export-filename="/home/jorge/Desktop/favicon.png"
        inkscape:export-xdpi="360"
@@ -216,6 +139,146 @@
              style="font-size:48px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Source Sans Pro;-inkscape-font-specification:Sans Bold" />
         </g>
       </g>
+    </g>
+    <g
+       inkscape:export-ydpi="360"
+       inkscape:export-xdpi="360"
+       inkscape:export-filename="/home/jorge/Desktop/m.png"
+       transform="matrix(0.99038424,0,0,1,-61.01129,-90.634223)"
+       id="g3095-9">
+      <rect
+         style="fill:#c07330;fill-opacity:1;stroke:none"
+         id="rect3052-7"
+         width="90"
+         height="90"
+         x="-150"
+         y="-15"
+         ry="15"
+         transform="matrix(1.0097091,0,0,1,213.06002,1187.9964)" />
+      <text
+         transform="scale(1.0048428,0.99518053)"
+         sodipodi:linespacing="125%"
+         id="text4010"
+         y="1250.1012"
+         x="75.897079"
+         style="font-size:48.23245621px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Source Sans Pro;-inkscape-font-specification:Sans Bold"
+         xml:space="preserve"><tspan
+           style="font-size:80.38742828px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;fill:#ffffff;fill-opacity:1;font-family:Source Sans Pro;-inkscape-font-specification:Source Sans Pro Bold"
+           y="1250.1012"
+           x="75.897079"
+           id="tspan4012"
+           sodipodi:role="line">M</tspan></text>
+    </g>
+    <g
+       id="g4151"
+       transform="translate(100,-2.6171874e-6)"
+       inkscape:export-filename="/home/jorge/Desktop/p.png"
+       inkscape:export-xdpi="360"
+       inkscape:export-ydpi="360">
+      <rect
+         style="fill:#73c030;fill-opacity:1;stroke:none"
+         id="rect3052-7-6"
+         width="90"
+         height="90"
+         x="0"
+         y="1082.3622"
+         ry="15" />
+      <text
+         sodipodi:linespacing="125%"
+         id="text4010-6"
+         y="1153.4421"
+         x="19.52"
+         style="font-size:48px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Source Sans Pro;-inkscape-font-specification:Sans Bold"
+         xml:space="preserve"><tspan
+           style="font-size:80px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;fill:#ffffff;fill-opacity:1;font-family:Source Sans Pro;-inkscape-font-specification:Source Sans Pro Bold"
+           y="1153.4421"
+           x="19.52"
+           id="tspan4012-0"
+           sodipodi:role="line">P</tspan></text>
+    </g>
+    <g
+       id="g4103"
+       transform="matrix(0.99038424,0,0,1,-61.01127,-90.634283)"
+       inkscape:export-filename="/home/jorge/Desktop/c.png"
+       inkscape:export-xdpi="360"
+       inkscape:export-ydpi="360">
+      <rect
+         style="fill:#7330c0;fill-opacity:1;stroke:none"
+         id="rect3052-7-1"
+         width="90.873817"
+         height="90"
+         x="263.54547"
+         y="1172.9965"
+         ry="15" />
+      <text
+         transform="scale(1.0048428,0.99518053)"
+         sodipodi:linespacing="125%"
+         id="text4010-0"
+         y="1250.1013"
+         x="283.13586"
+         style="font-size:48.23245621px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Source Sans Pro;-inkscape-font-specification:Sans Bold"
+         xml:space="preserve"><tspan
+           style="font-size:80.38742828px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;fill:#ffffff;fill-opacity:1;font-family:Source Sans Pro;-inkscape-font-specification:Source Sans Pro Bold"
+           y="1250.1013"
+           x="283.13586"
+           id="tspan4012-5"
+           sodipodi:role="line">C</tspan></text>
+    </g>
+    <g
+       id="g3095-9-7"
+       transform="matrix(0.99038424,0,0,1,238.98871,-90.634223)"
+       inkscape:export-filename="/home/jorge/Desktop/+.png"
+       inkscape:export-xdpi="360"
+       inkscape:export-ydpi="360">
+      <rect
+         transform="matrix(1.0097091,0,0,1,213.06002,1187.9964)"
+         ry="15"
+         y="-15"
+         x="-150"
+         height="90"
+         width="90"
+         id="rect3052-7-3"
+         style="fill:#c23073;fill-opacity:1;stroke:none" />
+      <text
+         xml:space="preserve"
+         style="font-size:48.23245621px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Source Sans Pro;-inkscape-font-specification:Sans Bold"
+         x="81.057953"
+         y="1255.7284"
+         id="text4010-85"
+         sodipodi:linespacing="125%"
+         transform="scale(1.0048428,0.99518053)"><tspan
+           sodipodi:role="line"
+           id="tspan4012-7"
+           x="81.057953"
+           y="1255.7284"
+           style="font-size:96.46491241px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;fill:#ffffff;fill-opacity:1;font-family:Source Sans Pro;-inkscape-font-specification:Source Sans Pro Bold">+</tspan></text>
+    </g>
+    <g
+       id="g4217"
+       transform="translate(100,-2.6171874e-6)"
+       inkscape:export-filename="/home/jorge/Desktop/l.png"
+       inkscape:export-xdpi="360"
+       inkscape:export-ydpi="360">
+      <rect
+         style="fill:#3073c2;fill-opacity:1;stroke:none"
+         id="rect3052-5"
+         width="90"
+         height="90"
+         x="-200"
+         y="1082.3622"
+         ry="15" />
+      <text
+         xml:space="preserve"
+         style="font-size:48px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Source Sans Pro;-inkscape-font-specification:Sans Bold"
+         x="-177.36"
+         y="1153.4421"
+         id="text4010-9"
+         sodipodi:linespacing="125%"><tspan
+           sodipodi:role="line"
+           id="tspan4012-09"
+           x="-177.36"
+           y="1153.4421"
+           style="font-size:80px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;fill:#ffffff;fill-opacity:1;font-family:Source Sans Pro;-inkscape-font-specification:Source Sans Pro Bold">L</tspan></text>
     </g>
   </g>
 </svg>
