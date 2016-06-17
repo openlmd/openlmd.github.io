@@ -25,43 +25,19 @@
     <div id="content-wrapper">
       <div class="inner clearfix">
         <section id="main-content">
-          <h2>Multimodal Monitoring for LMD</h2>
+          <h2>ROS-based LMD Robotized Cell</h2>
 
-<p>The multimodal monitoring approach for LMD started with the laboratory setup
-  developed for the MAShES project -in AIMEN-. This setup has been thought
-  for research and development to build the MAShES embedded solution.</p>
-  <!--Link to de mashes device in the official page-->
+<p>AIMEN's LMD robotized cell has been integrated to be fully operaded in an 
+  automatic way. A ROS driver has been implemented for an on-line robot 
+  programming, and for an on-line control of the LMD process parameters.</p>
 
 <table>
-<tr><td style="width:10%"><a href="https://github.com/openlmd/mashes">
-  <img src="images/mashes/m.png" width="48px"/></a></td>
+<tr><td style="width:10%"><a href="https://github.com/openlmd/aimen">
+  <img src="images/aimen/a.png" width="48px"/></a></td>
   <td style="padding:5px;text-align:left">Software shared in OpenLMD is intended
   for research, even so, it is being tested on an industrial facility.</td></tr>
 </table>
 <br>
-
-<div style="width: 100%; height: 0px; position: relative; padding-bottom: 75.0019%;">
-  <iframe src="https://www.youtube.com/embed/RRorQjrjqXc" frameborder="0"
-  allowfullscreen style="width: 100%; height: 100%; position: absolute;"></iframe>
-</div>
-<p><center><i>OpenLMD enables direct deployment of complex multimodal
-  monitoring and control solutions from research to actual industrial
-  setups.</i></center></p>
-
-<p>The solution bases on multimodal and multispectral image, using two coaxial
-  cameras and an off-axis triangulation solution. The coxial monitoring is
-  built with a CMOS camera for surface observation and a high-speed SWIR/MWIR
-  camera from <a href="http://www.niteurope.com/">NIT Europe</a>.</p>
-
-<table>
-<tr><td style="width:28%;"><a href="images/mashes/head.jpg"><img src="images/mashes/head.jpg"/></a></td>
-    <td style="padding:5px;"><a href="images/mashes/multimodal.jpg"><img src="images/mashes/multimodal.jpg"/></a></td></tr>
-</table>
-<p><center><i>OpenLMD multimodal head and visualization software.</i></center></p>
-
-<p>Some datasets for testing and development have been shared in ZENODO
-  platform: <a href="https://zenodo.org/collection/user-mashes">
-    https://zenodo.org/collection/user-mashes</a>.</p>
 
 <h3><a name="started"></a>Getting Started</h3>
 
@@ -73,7 +49,7 @@
 <pre>
   <code>$ roscore</code>
   <code>$ rosrun rosbag play file.bag --clock</code>
-  <code>$ roslaunch mashes_robviz robviz.launch sim:=true</code>
+  <code>$ roslaunch aimen_workcell workcell.launch sim:=true</code>
 </pre>
 
 <h3><a name="contact"></a>Contact</h3>
