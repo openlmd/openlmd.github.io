@@ -27,10 +27,15 @@
         <section id="main-content">
           <h2>3D Geometrical Monitoring</h2>
 
-<!--<p>The multimodal monitoring approach for LMD has started with the laboratory
-  setup developed in AIMEN for the MAShES project. This setup has been thought
-  for research and to be the base development to build the MAShES embedded
-  solution.</p>-->
+<p>The purpose of 3D geometrical monitoring is to obtain at each time instant the
+  3D point cloud (i.e., geometric information about the tracks resulting from the
+  LMD process) in robot coordinates. This has to be accomplished on-line, independently
+  of the speed of movement (within the practical limits of the process) and without
+  the need to apply any restrictions to the possible paths.</p>
+
+  <!-- The three tasks involved in the monitoring process, namely laser stripe detection
+  (Peak Finder), laser triangulation, and transformation to robot coordinates to
+  obtain the 3D point cloud, have been implemented in a PC using open-source tools. -->
 
 <table>
 <tr><td style="width:10%"><a href="https://github.com/openlmd/etna">
@@ -38,7 +43,32 @@
   <td style="padding:5px;text-align:left">Software shared in OpenLMD is intended
   for research, even so, it is being tested on an industrial facility.</td></tr>
 </table>
-<br>
+
+<p>A detailed description of the whole 3D triangulation process can be made from
+  the block diagram bellow.</p>
+
+<p><center><a href="images/etna/nodes.png"><img src="images/etna/nodes.png"/></a>
+<i>Proposed solution for on-line 3D point cloud measurement.</i></center></p>
+
+<p>The following elements can be identified:</p>
+
+<ul>
+  <li>Two drivers connected to the LMD robotized cell, one for Ethernet communication
+    with the robot ROS driver, and another for Gigabit Ethernet image acquisition from
+    the camera.</li>
+  <li>Robot State Publisher, a standard ROS node allowing instantaneous robot pose to
+    be determined.</li>
+  <li>Peak Finder, which locates in an image the 2D laser profile, i.e., the points
+    illuminated by the laser stripe.</li>
+  <li>Robot Pose Tool-Camera, which computes the instantaneous camera pose from the
+    data provided by both the State Publisher and the transformation that relates the
+    pose of the camera with that of the robot tool, implemented as part of the Calibration
+    process.</li>
+  <li>Laser Triangulation, which transforms the 2D laser profile (image coordinates) in
+    3D (real) camera coordinates.</li>
+  <li>Camera Pose + 3D Profile + (timestamp), which derives for each time instant (i.e.,
+    for each captured image) the 3D point cloud in robot coordinates.</li>
+</ul>
 
 <h3><a name="contact"></a>Contact</h3>
 
