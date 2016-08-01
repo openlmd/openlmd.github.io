@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset='utf-8'>
+    <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Architects+Daughter" rel="stylesheet" type="text/css">
     <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
     <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
 
@@ -117,6 +117,24 @@
 
 <p>You only must install ROS and clone OpenLMD projects on your computer.</p>
 
+<p>You need a computer running Ubuntu 14.04 and to install ROS Indigo
+  (<a href="http://wiki.ros.org/indigo/Installation/Ubuntu">http://wiki.ros.org/indigo/Installation/Ubuntu</a>).
+  When ROS is installed, you have to configure a ROS workspace
+  (<a href="http://wiki.ros.org/catkin/Tutorials/create_a_workspace">http://wiki.ros.org/catkin/Tutorials/create_a_workspace</a>)
+  where to clone the repositories on OpenLMD (<a href="https://github.com/openlmd">https://github.com/openlmd</a>).</p>
+
+<!-- Respecto a los datos, tenemos en Zenodo algunos datos iniciales bajo el
+nombre (Laser cladding multispectral coaxial monitoring)
+[https://zenodo.org/record/45664#.VuA9wUKwf6L].
+
+Hay que añadir el path del workspace en el archivo ~/.bashrc, añadiendo la
+siguente línea al final del archivo y abriendo nuevamente un terminal.
+
+source ~/catkin_ws/devel/setup.bash
+
+source /opt/ros/indigo/setup.bash
+source ~/catkin_ws/devel/setup.bash -->
+
 <p>When the instalation is completed, you can launch the MAShES
   <code>workcell</code> environment:</p>
 <pre><code>$ roslaunch mashes_robviz robviz.launch</code></pre>
@@ -145,6 +163,16 @@
         </aside>
       </div>
     </div>
+
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-80859872-1', 'auto');
+    ga('send', 'pageview');
+  </script>
 
   </body>
 </html>
