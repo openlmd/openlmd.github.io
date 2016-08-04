@@ -28,22 +28,7 @@
         <section id="main-content">
           <h2>3D Geometrical Monitoring</h2>
 
-          <div style="width: 100%; height: 0px; position: relative; padding-bottom: 75.0019%;">
-            <iframe src="https://www.slideshare.net/slideshow/embed_code/key/3REiTWgJECn3pL"
-            frameborder="0" allowfullscreen style="width: 100%; height: 100%; position: absolute;"></iframe>
-          </div>
-          <p><center><i>
-            <a href="http://www.slideshare.net/JorgeRodrguezArajo/rosbased-3d-online-monitoring-for-lmd-robotized-cells"
-            title="ROS-Based 3D On-Line Monitoring for LMD Robotized Cells" target="_blank">
-            ROS-Based 3D On-Line Monitoring for LMD Robotized Cells</a> </i> from <i>
-              <a href="http://www.slideshare.net/JorgeRodrguezArajo" target="_blank">Jorge Rodríguez-Araújo</a>
-          </i></center></p>
-
-          <blockquote>
-          On-line scanning without robot movement restrintions.
-          <figcaption class="attribution">— <a href="http://linkedin.com/in/jraraujo">Jorge Rodríguez-Araújo</a>,
-            Senior Reasearch Engineer at <a href="http://www.aimen.es/">AIMEN Technology Center</a></figcaption>
-          </blockquote>
+<h3>Introduction</h3>
 
 <p>The purpose of 3D geometrical monitoring is to obtain at each time instant the
   3D point cloud (i.e., geometric information about the tracks resulting from the
@@ -62,13 +47,43 @@
   for research, even so, it is being tested on an industrial facility.</td></tr>
 </table>
 
-<p>A detailed description of the whole 3D triangulation process can be made from
-  the block diagram bellow.</p>
+<br>
+<div style="width: 100%; height: 0px; position: relative; padding-bottom: 75.0019%;">
+  <iframe src="https://www.slideshare.net/slideshow/embed_code/key/3REiTWgJECn3pL"
+  frameborder="0" allowfullscreen style="width: 100%; height: 100%; position: absolute;"></iframe>
+</div>
+<p><center><i>
+  <a href="http://www.slideshare.net/JorgeRodrguezArajo/rosbased-3d-online-monitoring-for-lmd-robotized-cells"
+  title="ROS-Based 3D On-Line Monitoring for LMD Robotized Cells" target="_blank">
+  ROS-Based 3D On-Line Monitoring for LMD Robotized Cells</a> </i> from <i>
+    <a href="http://www.slideshare.net/JorgeRodrguezArajo" target="_blank">Jorge Rodríguez-Araújo</a>
+</i></center></p>
 
-<p><center><a href="images/etna/nodes.png"><img src="images/etna/nodes.png" width="80%"/></a><br>
-<i>Proposed solution for on-line 3D point cloud measurement.</i></center></p>
+<blockquote>
+On-line scanning without robot movement restrintions.
+<figcaption class="attribution">— <a href="http://linkedin.com/in/jraraujo">Jorge Rodríguez-Araújo</a>,
+  Senior Reasearch Engineer at <a href="http://www.aimen.es/">AIMEN Technology Center</a></figcaption>
+</blockquote>
 
-<p>The following elements can be identified:</p>
+<h3>Description</h3>
+
+<p>The 3D monitoring system provides an on-line scanning solution based on the
+  triangulation principle and integrated with the laser head.</p>
+
+<p>A 2D camera, a laser stripe, and the coupling element are only the hardware
+  components required to perform the scanning functions based on triangulation.
+  To improve the overall performance of the solution a NIR camera from IDS is
+  used, because the sensor of this camera provides an improved sensitivity
+  (about 60%) in the range of the laser wavelength (660nm). This sensitivity is
+  a key factor to minimize the exposition time, reducing the distortion error
+  caused by the movement in the image.</p>
+
+<p><center><a href="images/etna/nodes.png"><img src="images/etna/nodes.png" width="70%"/></a><br>
+<i>Block diagram for on-line 3D point cloud measurement.</i></center></p>
+
+<p>The system combines 3D triangulation and instantaneous robot position
+  monitoring (see figure above) to register the 3D point cloud without robot
+  movement restrictions. The following elements can be identified:</p>
 
 <ul>
   <li>Two drivers connected to the LMD robotized cell, one for Ethernet communication
@@ -100,18 +115,16 @@
 <p>Copyright 2016 - AIMEN Technology Center</p>
 
         </section>
-        <aside id="sidebar">
-          <ol>
-          <li style="font-size:14px;"><a href="index.html">Main</a></li>
-          <li style="font-size:14px;"><a href="aimen.html">Equipment</a></li>
-          <li style="font-size:14px;"><a href="mashes.html">Multimodal</a></li>
-          <li style="font-size:14px;"><a href="robpath.html">Additive</a></li>
-          <li style="font-size:14px;"><a href="etna.html">Triangulation</a></li>
-          <li style="font-size:14px;"><a href="proper.html">Planning</a></li>
-          <li style="font-size:14px;"><a href="cladplus.html">Control</a></li>
-          <li style="font-size:14px;"><a href="cyplam.html">Data</a></li>
-          </ol>
-        </aside>
+        <aside id="sidebar"><ul style="list-style-type: none;">
+          <li style="font-size:14px;"><a href="index.html"><img src="images/l.png" width="24px"/> Main</a></li>
+          <li style="font-size:14px;"><a href="aimen.html"><img src="images/aimen/a.png" width="24px"/> Equipment</a></li>
+          <li style="font-size:14px;"><a href="etna.html"><img src="images/etna/e.png" width="24px"/> Triangulation</a></li>
+          <li style="font-size:14px;"><a href="mashes.html"><img src="images/mashes/m.png" width="24px"/> Multimodal</a></li>
+          <li style="font-size:14px;"><a href="robpath.html"><img src="images/robpath/r.png" width="24px"/> Planning</a></li>
+          <li style="font-size:14px;"><a href="cladplus.html"><img src="images/cladplus/+.png" width="24px"/> Control</a></li>
+          <li style="font-size:14px;"><a href="proper.html"><img src="images/proper/p.png" width="24px"/> Adaptive</a></li>
+          <li style="font-size:14px;"><a href="cyplam.html"><img src="images/cyplam/c.png" width="24px"/> Data</a></li>
+        </ul></aside>
       </div>
     </div>
 

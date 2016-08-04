@@ -430,7 +430,7 @@ th {
 body {
   font-family: 'Helvetica Neue', Helvetica, Arial, serif;
   font-size: 15px;
-  font-weight: 400;
+  font-weight: normal;
   line-height: 1.5;
   color: #666;
   background-color: #fafafa;
@@ -597,12 +597,7 @@ table {
   border: 1px solid #ebebeb;
 }
 
-th {
-  font-weight: 500;
-}
-
 td {
-  font-weight: 300;
   text-align: center;
   border: 1px solid #ebebeb;
 }
@@ -719,7 +714,7 @@ a {
 }
 
 p a {
-  font-weight: 400;
+  font-weight: normal;
 }
 
 blockquote {
@@ -743,7 +738,6 @@ ol {
 
 dl dd {
   font-style: italic;
-  font-weight: 100;
 }
 
 footer {
