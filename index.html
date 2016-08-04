@@ -24,7 +24,7 @@
     <div id="content-wrapper">
       <div class="inner clearfix">
         <section id="main-content">
-          <h2><a name="openlmd"></a>Welcome to Open Laser Metal Deposition</h2>
+          <h2><a name="openlmd"></a>Open Laser Metal Deposition</h2>
 
 <p>OpenLMD (Open Laser Metal Deposition) is a set of software components
   provided to demonstrate last advances on laser processing control systems.
@@ -99,20 +99,6 @@
     Big data registration for LMD adaptive parametric control (based on Big Data and Deep Learning).</td></tr>
 </table>
 
-<ul>
-  <li>AIMEN: <a href="https://github.com/openlmd/aimen">https://github.com/openlmd/aimen</a></li>
-  <li>Etna: <a href="https://github.com/openlmd/etna">https://github.com/openlmd/etna</a></li>
-  <li>RobPath: <a href="https://github.com/openlmd/robpath">https://github.com/openlmd/robpath</a></li>
-  <li>MAShES: <a href="https://github.com/openlmd/mashes">https://github.com/openlmd/mashes</a></li>
-  <li>PROPER: <a href="https://github.com/openlmd/proper">https://github.com/openlmd/proper</a></li>
-  <li>CladPlus: <a href="https://github.com/openlmd/cladplus">https://github.com/openlmd/cladplus</a></li>
-  <li>CyPLAM: <a href="https://github.com/openlmd/cyplam">https://github.com/openlmd/cyplam</a></li>
-</ul>
-
-<p>Some datasets for testing and development are been shared through the
-  ZENODO platform in <a href="https://zenodo.org/collection/user-mashes">
-    https://zenodo.org/collection/user-mashes</a>.</p>
-
 <h3><a name="started"></a>Getting Started</h3>
 
 <p>You only must install ROS and clone OpenLMD projects on your computer.</p>
@@ -123,21 +109,24 @@
   (<a href="http://wiki.ros.org/catkin/Tutorials/create_a_workspace">http://wiki.ros.org/catkin/Tutorials/create_a_workspace</a>)
   where to clone the repositories on OpenLMD (<a href="https://github.com/openlmd">https://github.com/openlmd</a>).</p>
 
-<!-- Respecto a los datos, tenemos en Zenodo algunos datos iniciales bajo el
-nombre (Laser cladding multispectral coaxial monitoring)
-[https://zenodo.org/record/45664#.VuA9wUKwf6L].
+<p>Moreover, you must add the line <code>source ~/catkin_ws/devel/setup.bash</code>
+  at the end of your <code>~/.bashrc</code> file for loading your workspace by default.</p>
 
+<!--
 Hay que añadir el path del workspace en el archivo ~/.bashrc, añadiendo la
 siguente línea al final del archivo y abriendo nuevamente un terminal.
 
-source ~/catkin_ws/devel/setup.bash
-
 source /opt/ros/indigo/setup.bash
-source ~/catkin_ws/devel/setup.bash -->
+source ~/catkin_ws/devel/setup.bash
+-->
 
 <p>When the instalation is completed, you can launch the MAShES
   <code>workcell</code> environment:</p>
 <pre><code>$ roslaunch mashes_robviz robviz.launch</code></pre>
+
+<p>Some datasets for testing and development have been shared on ZENODO platform
+  as "Laser cladding multispectral coaxial monitoring" <!-- [https://zenodo.org/record/45664#.VuA9wUKwf6L] -->
+  (<a href="https://zenodo.org/collection/user-mashes">https://zenodo.org/collection/user-mashes</a>).</p>
 
 <h3><a name="contact"></a>Contact</h3>
 
@@ -149,22 +138,19 @@ source ~/catkin_ws/devel/setup.bash -->
 <p>Copyright 2016 - AIMEN Technology Center</p>
 
         </section>
-        <aside id="sidebar">
-          <ol>
-          <li style="font-size:14px;"><a href="index.html">Main</a></li>
-          <li style="font-size:14px;"><a href="aimen.html">Equipment</a></li>
-          <li style="font-size:14px;"><a href="mashes.html">Multimodal</a></li>
-          <li style="font-size:14px;"><a href="robpath.html">Additive</a></li>
-          <li style="font-size:14px;"><a href="etna.html">Triangulation</a></li>
-          <li style="font-size:14px;"><a href="proper.html">Planning</a></li>
-          <li style="font-size:14px;"><a href="cladplus.html">Control</a></li>
-          <li style="font-size:14px;"><a href="cyplam.html">Data</a></li>
-          </ol>
-        </aside>
+        <aside id="sidebar"><ul style="list-style-type: none;">
+          <li style="font-size:14px;"><a href="index.html"><img src="images/l.png" width="24px"/> Main</a></li>
+          <li style="font-size:14px;"><a href="aimen.html"><img src="images/aimen/a.png" width="24px"/> Equipment</a></li>
+          <li style="font-size:14px;"><a href="mashes.html"><img src="images/mashes/m.png" width="24px"/> Multimodal</a></li>
+          <li style="font-size:14px;"><a href="robpath.html"><img src="images/robpath/r.png" width="24px"/> Additive</a></li>
+          <li style="font-size:14px;"><a href="etna.html"><img src="images/etna/e.png" width="24px"/> Triangulation</a></li>
+          <li style="font-size:14px;"><a href="proper.html"><img src="images/proper/p.png" width="24px"/> Planning</a></li>
+          <li style="font-size:14px;"><a href="cladplus.html"><img src="images/cladplus/+.png" width="24px"/> Control</a></li>
+          <li style="font-size:14px;"><a href="cyplam.html"><img src="images/cyplam/c.png" width="24px"/> Data</a></li>
+        </ul></aside>
       </div>
     </div>
-
-  <script>
+  <!-- <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
     m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -172,7 +158,6 @@ source ~/catkin_ws/devel/setup.bash -->
 
     ga('create', 'UA-80859872-1', 'auto');
     ga('send', 'pageview');
-  </script>
-
+  </script> -->
   </body>
 </html>
