@@ -112,14 +112,6 @@
 <p>Moreover, you must add the line <code>source ~/catkin_ws/devel/setup.bash</code>
   at the end of your <code>~/.bashrc</code> file for loading your workspace by default.</p>
 
-<!--
-Hay que añadir el path del workspace en el archivo ~/.bashrc, añadiendo la
-siguente línea al final del archivo y abriendo nuevamente un terminal.
-
-source /opt/ros/indigo/setup.bash
-source ~/catkin_ws/devel/setup.bash
--->
-
 <p>When the instalation is completed, you can launch the MAShES
   <code>workcell</code> environment:</p>
 <pre><code>$ roslaunch mashes_robviz robviz.launch</code></pre>
@@ -150,14 +142,49 @@ source ~/catkin_ws/devel/setup.bash
         </ul></aside>
       </div>
     </div>
-  <!-- <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-    ga('create', 'UA-80859872-1', 'auto');
-    ga('send', 'pageview');
-  </script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="javascripts/jquery-eu-cookie-law-popup.min.js"></script>
+    <!-- <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-80859872-1', 'auto');
+      ga('send', 'pageview');
+
+    </script> -->
+    <script>
+      $(document).bind("user_cookie_consent_changed", function(event, object) {
+        var consent = $(object).attr('consent')
+        console.log("User consent: " +  consent);
+        if (consent) {
+          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+          ga('create', 'UA-80859872-1', 'auto');
+          ga('send', 'pageview');
+        }
+      });
+
+      $(document).euCookieLawPopup().init({
+        // cookiePolicyUrl: "privacy.html",
+        popupPosition: 'bottom',
+        colorStyle: 'default',
+        compactStyle: true,
+        popupTitle: "This website uses Google Analytics cookies",
+        popupText: "We use cookies to ensure that we give you the best experience. If you close this notice, you\'ll accept their use.",
+        buttonContinueTitle: "Got it!",
+        buttonLearnmoreTitle: "Learn more",
+        buttonLearnmoreOpenInNewWindow: true,
+        agreementExpiresInDays: 30,
+        autoAcceptCookiePolicy: true,
+        htmlMarkup: null
+      });
+    </script>
+
   </body>
 </html>
