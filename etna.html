@@ -7,12 +7,9 @@
     <link href="https://fonts.googleapis.com/css?family=Architects+Daughter" rel="stylesheet" type="text/css">
     <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
     <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
-
     <link rel="icon" type="image/png" href="images/l.png">
-
     <title>OpenLMD by AIMEN Technology Center</title>
   </head>
-
   <body>
     <header>
       <div class="inner">
@@ -22,98 +19,79 @@
         <a href="https://github.com/openlmd" class="button"><small>Source Code on</small> GitHub</a>
       </div>
     </header>
-
     <div id="content-wrapper">
       <div class="inner clearfix">
         <section id="main-content">
           <h2>3D Geometrical Monitoring</h2>
-
-<h3>Introduction</h3>
-
-<p>The purpose of 3D geometrical monitoring is to obtain at each time instant the
-  3D point cloud (i.e., geometric information about the tracks resulting from the
-  LMD process) in robot coordinates. This has to be accomplished on-line, independently
-  of the speed of movement (within the practical limits of the process) and without
-  the need to apply any restrictions to the possible paths.</p>
-
-  <!-- The three tasks involved in the monitoring process, namely laser stripe detection
-  (Peak Finder), laser triangulation, and transformation to robot coordinates to
-  obtain the 3D point cloud, have been implemented in a PC using open-source tools. -->
-
-<table>
-<tr><td style="width:10%"><a href="https://github.com/openlmd/etna">
-  <img src="images/etna/e.png" width="48px"/></a></td>
-  <td style="padding:5px;text-align:left">Software shared in OpenLMD is intended
-  for research, even so, it is being tested on an industrial facility.</td></tr>
-</table>
-
-<br>
-<div style="width: 100%; height: 0px; position: relative; padding-bottom: 75.0019%;">
-  <iframe src="https://www.slideshare.net/slideshow/embed_code/key/3REiTWgJECn3pL"
-  frameborder="0" allowfullscreen style="width: 100%; height: 100%; position: absolute;"></iframe>
-</div>
-<p><center><i>
-  <a href="http://www.slideshare.net/JorgeRodrguezArajo/rosbased-3d-online-monitoring-for-lmd-robotized-cells"
-  title="ROS-Based 3D On-Line Monitoring for LMD Robotized Cells" target="_blank">
-  ROS-Based 3D On-Line Monitoring for LMD Robotized Cells</a> </i> from <i>
-    <a href="http://www.slideshare.net/JorgeRodrguezArajo" target="_blank">Jorge Rodríguez-Araújo</a>
-</i></center></p>
-
-<blockquote>
-On-line scanning without robot movement restrintions.
-<figcaption class="attribution">— <a href="http://linkedin.com/in/jraraujo">Jorge Rodríguez-Araújo</a>,
-  Senior Reasearch Engineer at <a href="http://www.aimen.es/">AIMEN Technology Center</a></figcaption>
-</blockquote>
-
-<h3>Description</h3>
-
-<p>The 3D monitoring system provides an on-line scanning solution based on the
-  triangulation principle and integrated with the laser head.</p>
-
-<p>A 2D camera, a laser stripe, and the coupling element are only the hardware
-  components required to perform the scanning functions based on triangulation.
-  To improve the overall performance of the solution a NIR camera from IDS is
-  used, because the sensor of this camera provides an improved sensitivity
-  (about 60%) in the range of the laser wavelength (660nm). This sensitivity is
-  a key factor to minimize the exposition time, reducing the distortion error
-  caused by the movement in the image.</p>
-
-<p><center><a href="images/etna/nodes.png"><img src="images/etna/nodes.png" width="70%"/></a><br>
-<i>Block diagram for on-line 3D point cloud measurement.</i></center></p>
-
-<p>The system combines 3D triangulation and instantaneous robot position
-  monitoring (see figure above) to register the 3D point cloud without robot
-  movement restrictions. The following elements can be identified:</p>
-
-<ul>
-  <li>Two drivers connected to the LMD robotized cell, one for Ethernet communication
-    with the robot ROS driver, and another for Gigabit Ethernet image acquisition from
-    the camera.</li>
-  <li>Robot State Publisher, a standard ROS node allowing instantaneous robot pose to
-    be determined.</li>
-  <li>Peak Finder, which locates in an image the 2D laser profile, i.e., the points
-    illuminated by the laser stripe.</li>
-  <li>Robot Pose Tool-Camera, which computes the instantaneous camera pose from the
-    data provided by both the State Publisher and the transformation that relates the
-    pose of the camera with that of the robot tool, implemented as part of the Calibration
-    process.</li>
-  <li>Laser Triangulation, which transforms the 2D laser profile (image coordinates) in
-    3D (real) camera coordinates.</li>
-  <li>Camera Pose + 3D Profile + (timestamp), which derives for each time instant (i.e.,
-    for each captured image) the 3D point cloud in robot coordinates.</li>
-</ul>
-
-<p><center><a href="images/etna/scan.png"><img src="images/etna/scan.png"/></a><br>
-<i>Direct scanning result (metric point cloud) from a cladded part.</i></center></p>
-
-<h3><a name="contact"></a>Contact</h3>
-
-<p>Jorge Rodríguez-Araújo (<a href="https://github.com/jraraujo-aimen" class="user-mention">@jraraujo-aimen</a>)</p>
-
-<hr/>
-
-<p>Copyright 2016 - AIMEN Technology Center</p>
-
+          <h3>Introduction</h3>
+          <p>The purpose of 3D geometrical monitoring is to obtain at each time instant the
+            3D point cloud (i.e., geometric information about the tracks resulting from the
+            LMD process) in robot coordinates. This has to be accomplished on-line, independently
+            of the speed of movement (within the practical limits of the process) and without
+            the need to apply any restrictions to the possible paths.</p>
+            <!-- The three tasks involved in the monitoring process, namely laser stripe detection
+            (Peak Finder), laser triangulation, and transformation to robot coordinates to
+            obtain the 3D point cloud, have been implemented in a PC using open-source tools. -->
+          <table>
+          <tr><td style="width:10%"><a href="https://github.com/openlmd/etna">
+            <img src="images/etna/e.png" width="48px"/></a></td>
+            <td style="padding:5px;text-align:left">Software shared in OpenLMD is intended
+            for research, even so, it is being tested on an industrial facility.</td></tr>
+          </table>
+          <br>
+          <div style="width: 100%; height: 0px; position: relative; padding-bottom: 75.0019%;">
+            <iframe src="https://www.slideshare.net/slideshow/embed_code/key/3REiTWgJECn3pL"
+            frameborder="0" allowfullscreen style="width: 100%; height: 100%; position: absolute;"></iframe>
+          </div>
+          <p><center><i>
+            <a href="http://www.slideshare.net/JorgeRodrguezArajo/rosbased-3d-online-monitoring-for-lmd-robotized-cells"
+            title="ROS-Based 3D On-Line Monitoring for LMD Robotized Cells" target="_blank">
+            ROS-Based 3D On-Line Monitoring for LMD Robotized Cells</a> </i> from <i>
+              <a href="http://www.slideshare.net/JorgeRodrguezArajo" target="_blank">Jorge Rodríguez-Araújo</a>
+          </i></center></p>
+          <blockquote>
+          On-line scanning without robot movement restrintions.
+          <figcaption class="attribution">— <a href="http://linkedin.com/in/jraraujo">Jorge Rodríguez-Araújo</a>,
+            Senior Reasearch Engineer at <a href="http://www.aimen.es/">AIMEN Technology Center</a></figcaption>
+          </blockquote>
+          <h3>Description</h3>
+          <p>The 3D monitoring system provides an on-line scanning solution based on the
+            triangulation principle and integrated with the laser head.</p>
+          <p>A 2D camera, a laser stripe, and the coupling element are only the hardware
+            components required to perform the scanning functions based on triangulation.
+            To improve the overall performance of the solution a NIR camera from IDS is
+            used, because the sensor of this camera provides an improved sensitivity
+            (about 60%) in the range of the laser wavelength (660nm). This sensitivity is
+            a key factor to minimize the exposition time, reducing the distortion error
+            caused by the movement in the image.</p>
+          <p><center><a href="images/etna/nodes.png"><img src="images/etna/nodes.png" width="70%"/></a><br>
+          <i>Block diagram for on-line 3D point cloud measurement.</i></center></p>
+          <p>The system combines 3D triangulation and instantaneous robot position
+            monitoring (see figure above) to register the 3D point cloud without robot
+            movement restrictions. The following elements can be identified:</p>
+          <ul>
+            <li>Two drivers connected to the LMD robotized cell, one for Ethernet communication
+              with the robot ROS driver, and another for Gigabit Ethernet image acquisition from
+              the camera.</li>
+            <li>Robot State Publisher, a standard ROS node allowing instantaneous robot pose to
+              be determined.</li>
+            <li>Peak Finder, which locates in an image the 2D laser profile, i.e., the points
+              illuminated by the laser stripe.</li>
+            <li>Robot Pose Tool-Camera, which computes the instantaneous camera pose from the
+              data provided by both the State Publisher and the transformation that relates the
+              pose of the camera with that of the robot tool, implemented as part of the Calibration
+              process.</li>
+            <li>Laser Triangulation, which transforms the 2D laser profile (image coordinates) in
+              3D (real) camera coordinates.</li>
+            <li>Camera Pose + 3D Profile + (timestamp), which derives for each time instant (i.e.,
+              for each captured image) the 3D point cloud in robot coordinates.</li>
+          </ul>
+          <p><center><a href="images/etna/scan.png"><img src="images/etna/scan.png"/></a><br>
+          <i>Direct scanning result (metric point cloud) from a cladded part.</i></center></p>
+          <h3><a name="contact"></a>Contact</h3>
+          <p>Jorge Rodríguez-Araújo (<a href="https://github.com/jraraujo-aimen" class="user-mention">@jraraujo-aimen</a>)</p>
+          <hr/>
+          <p>Copyright 2016 - AIMEN Technology Center</p>
         </section>
         <aside id="sidebar"><ul style="list-style-type: none;">
           <li style="font-size:14px;"><a href="index.html"><img src="images/l.png" width="24px"/> Main</a></li>
@@ -127,6 +105,15 @@ On-line scanning without robot movement restrintions.
         </ul></aside>
       </div>
     </div>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
+      ga('create', 'UA-80859872-1', 'auto');
+      ga('send', 'pageview');
+
+    </script>
   </body>
 </html>

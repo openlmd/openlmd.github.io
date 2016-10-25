@@ -7,12 +7,9 @@
     <link href="https://fonts.googleapis.com/css?family=Architects+Daughter" rel="stylesheet" type="text/css">
     <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
     <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
-
     <link rel="icon" type="image/png" href="images/l.png">
-
     <title>OpenLMD by AIMEN Technology Center</title>
   </head>
-
   <body>
     <header>
       <div class="inner">
@@ -22,72 +19,55 @@
         <a href="https://github.com/openlmd" class="button"><small>Source Code on</small> GitHub</a>
       </div>
     </header>
-
     <div id="content-wrapper">
       <div class="inner clearfix">
         <section id="main-content">
           <h2>Multimodal Monitoring for LMD</h2>
-
-<p>The multimodal monitoring approach for LMD started with the laboratory setup
-  developed for the MAShES project -in AIMEN-. This setup has been thought
-  for research and development to build the MAShES embedded solution.</p>
-  <!--Link to de mashes device in the official page-->
-
-<table>
-<tr><td style="width:10%"><a href="https://github.com/openlmd/mashes">
-  <img src="images/mashes/m.png" width="48px"/></a></td>
-  <td style="padding:5px;text-align:left">Software shared in OpenLMD is intended
-  for research, even so, it is being tested on an industrial facility.</td></tr>
-</table>
-<br>
-
-<div style="width: 100%; height: 0px; position: relative; padding-bottom: 75.0019%;">
-  <iframe src="https://www.youtube.com/embed/RRorQjrjqXc" frameborder="0"
-  allowfullscreen style="width: 100%; height: 100%; position: absolute;"></iframe>
-</div>
-<p><center><i>OpenLMD enables direct deployment of complex multimodal
-  monitoring and control solutions from research to actual industrial
-  setups.</i></center></p>
-
-<p><center><a href="images/mashes/head.png"><img src="images/mashes/head.png"/></a><br>
-<i>AIMEN's multimodal laser cladding head.</i></center></p>
-
-<p>The solution bases on multimodal and multispectral image, using two coaxial
-  cameras and an off-axis triangulation solution. The coxial monitoring is
-  built with a CMOS camera for surface observation and a high-speed SWIR/MWIR
-  camera from <a href="http://www.niteurope.com/">NIT Europe</a>.</p>
-
-<table>
-<tr><td style="width:28%;"><a href="images/mashes/head.jpg"><img src="images/mashes/head.jpg"/></a></td>
-    <td style="padding:5px;"><a href="images/mashes/multimodal.jpg"><img src="images/mashes/multimodal.jpg"/></a></td></tr>
-</table>
-<p><center><i>OpenLMD multimodal head and visualization software.</i></center></p>
-
-<p>Some datasets for testing and development have been shared in ZENODO
-  platform: <a href="https://zenodo.org/collection/user-mashes">
-    https://zenodo.org/collection/user-mashes</a>.</p>
-
-<h3><a name="started"></a>Getting Started</h3>
-
-<p>You only must install ROS and clone OpenLMD projects on your computer.</p>
-
-<p>When the instalation have been completed, you only need to download any bag
-  file availble on ZENODO to test the software.</p>
-
-<pre>
-  <code>$ roscore</code>
-  <code>$ rosrun rosbag play file.bag --clock</code>
-  <code>$ roslaunch mashes_robviz robviz.launch sim:=true</code>
-</pre>
-
-<h3><a name="contact"></a>Contact</h3>
-
-<p>Jorge Rodríguez-Araújo (<a href="https://github.com/jraraujo-aimen" class="user-mention">@jraraujo-aimen</a>)</p>
-
-<hr/>
-
-<p>Copyright 2016 - AIMEN Technology Center</p>
-
+          <p>The multimodal monitoring approach for LMD started with the laboratory setup
+            developed for the MAShES project -in AIMEN-. This setup has been thought
+            for research and development to build the MAShES embedded solution.</p>
+            <!--Link to de mashes device in the official page-->
+          <table>
+          <tr><td style="width:10%"><a href="https://github.com/openlmd/mashes">
+            <img src="images/mashes/m.png" width="48px"/></a></td>
+            <td style="padding:5px;text-align:left">Software shared in OpenLMD is intended
+            for research, even so, it is being tested on an industrial facility.</td></tr>
+          </table>
+          <br>
+          <div style="width: 100%; height: 0px; position: relative; padding-bottom: 75.0019%;">
+            <iframe src="https://www.youtube.com/embed/RRorQjrjqXc" frameborder="0"
+            allowfullscreen style="width: 100%; height: 100%; position: absolute;"></iframe>
+          </div>
+          <p><center><i>OpenLMD enables direct deployment of complex multimodal
+            monitoring and control solutions from research to actual industrial
+            setups.</i></center></p>
+          <p><center><a href="images/mashes/head.png"><img src="images/mashes/head.png"/></a><br>
+          <i>AIMEN's multimodal laser cladding head.</i></center></p>
+          <p>The solution bases on multimodal and multispectral image, using two coaxial
+            cameras and an off-axis triangulation solution. The coxial monitoring is
+            built with a CMOS camera for surface observation and a high-speed SWIR/MWIR
+            camera from <a href="http://www.niteurope.com/">NIT Europe</a>.</p>
+          <table>
+          <tr><td style="width:28%;"><a href="images/mashes/head.jpg"><img src="images/mashes/head.jpg"/></a></td>
+              <td style="padding:5px;"><a href="images/mashes/multimodal.jpg"><img src="images/mashes/multimodal.jpg"/></a></td></tr>
+          </table>
+          <p><center><i>OpenLMD multimodal head and visualization software.</i></center></p>
+          <p>Some datasets for testing and development have been shared in ZENODO
+            platform: <a href="https://zenodo.org/collection/user-mashes">
+              https://zenodo.org/collection/user-mashes</a>.</p>
+          <h3><a name="started"></a>Getting Started</h3>
+          <p>You only must install ROS and clone OpenLMD projects on your computer.</p>
+          <p>When the instalation have been completed, you only need to download any bag
+            file availble on ZENODO to test the software.</p>
+          <pre>
+            <code>$ roscore</code>
+            <code>$ rosrun rosbag play file.bag --clock</code>
+            <code>$ roslaunch mashes_robviz robviz.launch sim:=true</code>
+          </pre>
+          <h3><a name="contact"></a>Contact</h3>
+          <p>Jorge Rodríguez-Araújo (<a href="https://github.com/jraraujo-aimen" class="user-mention">@jraraujo-aimen</a>)</p>
+          <hr/>
+          <p>Copyright 2016 - AIMEN Technology Center</p>
         </section>
         <aside id="sidebar"><ul style="list-style-type: none;">
           <li style="font-size:14px;"><a href="index.html"><img src="images/l.png" width="24px"/> Main</a></li>
@@ -101,6 +81,15 @@
         </ul></aside>
       </div>
     </div>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
+      ga('create', 'UA-80859872-1', 'auto');
+      ga('send', 'pageview');
+
+    </script>
   </body>
 </html>
