@@ -19,36 +19,45 @@
         <a href="https://github.com/openlmd" class="button"><small>Source Code on</small> GitHub</a>
       </div>
     </header>
+    <br><div style="padding-top: 50;"><center>
+      <a href="index.html" title="Main page" style="padding:10"><img src="images/l.png" width="32px"/></a>
+      <a href="aimen.html" title="Machine integration" style="padding:10"><img src="images/aimen/a.png" width="32px"/></a>
+      <a href="etna.html" title="3D triangulation" style="padding:10"><img src="images/etna/e.png" width="32px"/></a>
+      <a href="mashes.html" title="Multimodal monitoring" style="padding:10"><img src="images/mashes/m.png" width="32px"/></a>
+      <a href="robpath.html" title="Off-line path planning" style="padding:10"><img src="images/robpath/r.png" width="32px"/></a>
+      <a href="cladplus.html" title="Closed-loop control" style="padding:10"><img src="images/cladplus/+.png" width="32px"/></a>
+      <a href="proper.html" title="Adaptive path planning" style="padding:10"><img src="images/proper/p.png" width="32px"/></a>
+      <a href="cyplam.html" title="Bit data analysis" style="padding:10"><img src="images/cyplam/c.png" width="32px"/></a>
+    </center></div>
     <div id="content-wrapper">
       <div class="inner clearfix">
-        <section id="main-content">
-          <h2>ROS-based LMD Robotized Cell</h2>
-<p>AIMEN's LMD robotized laser cell has been integrated to be fully operaded in
-  an automatic way. A ROS driver has been implemented for an on-line control of
-  the Laser Metal Deposition process.</p>
-<table>
-<tr><td style="width:10%"><a href="https://github.com/openlmd/aimen">
-  <img src="images/aimen/a.png" width="48px"/></a></td>
-  <td style="padding:5px;text-align:left">Software shared in OpenLMD is intended
-  for research, even so, it is being tested on an industrial facility.</td></tr>
-</table>
-<p><center><a href="images/aimen/cell.jpg"><img src="images/aimen/cell.jpg"/></a><br>
-<i>AIMEN's Laser Metal Depositon robotized cell.</i></center></p>
-<h3>Introduction</h3>
-<p>The ROS driver has two nodes, one publishes the instantaneous position
-  (<code>robot_logger</code>) of the robot and another listens commands
-  (<code>robot_server</code>) to control the robotized cell.</p>
-<p>In the robot side a multitask was programmed in RAPID to send joint states
-  (<code>LOGGER</code>) and other to read commands (<code>SERVER_command</code>)
-  using a TCP/IP socket connection. Moreover, one aditional task is used for
-  the execution of movements (<code>SERVER_motion</code>). In this way, two
-  tasks are always running in the background to communicate with the PC, while
-  the other is only activated when the system must run.</p>
-<p>All the elements present in the laser cell was integrated with the robot
-  controller to provide a common interface for a full LMD control automation.
-  Thus commands abstraction is provided to operate the system from the ROS side
-  with independece of the equipment present in the facility. This set of
-  commands was called JASON because their syntax is JSON.</p>
+        <h2>ROS-based LMD Robotized Cell</h2>
+        <p>AIMEN's LMD robotized laser cell has been integrated to be fully operaded in
+          an automatic way. A ROS driver has been implemented for an on-line control of
+          the Laser Metal Deposition process.</p>
+        <table>
+        <tr><td style="width:10%"><a href="https://github.com/openlmd/aimen">
+          <img src="images/aimen/a.png" width="48px"/></a></td>
+          <td style="padding:5px;text-align:left">Software shared in OpenLMD is intended
+          for research, even so, it is being tested on an industrial facility.</td></tr>
+        </table>
+        <p><center><a href="images/aimen/cell.jpg"><img src="images/aimen/cell.jpg" width=100%/></a></center></p>
+        <p><center><i>AIMEN's Laser Metal Depositon robotized cell.</i></center></p>
+        <h3>Introduction</h3>
+        <p>The ROS driver has two nodes, one publishes the instantaneous position
+          (<code>robot_logger</code>) of the robot and another listens commands
+          (<code>robot_server</code>) to control the robotized cell.</p>
+        <p>In the robot side a multitask was programmed in RAPID to send joint states
+          (<code>LOGGER</code>) and other to read commands (<code>SERVER_command</code>)
+          using a TCP/IP socket connection. Moreover, one aditional task is used for
+          the execution of movements (<code>SERVER_motion</code>). In this way, two
+          tasks are always running in the background to communicate with the PC, while
+          the other is only activated when the system must run.</p>
+        <p>All the elements present in the laser cell was integrated with the robot
+          controller to provide a common interface for a full LMD control automation.
+          Thus commands abstraction is provided to operate the system from the ROS side
+          with independece of the equipment present in the facility. This set of
+          commands was called JASON because their syntax is JSON.</p>
 <pre>
   {"tool": [[246.2, -20.3, 432.0], [-0.5000, -0.0000, 0.8660, -0.0000]]}
   {"workobject": [[1550.0, -178.0, 930.8], [1.0000, 0.0000, 0.0000, 0.0000]]}
@@ -71,31 +80,20 @@
   {"move": [[-50, -50, 125], [1, 0, 0, 0]]}
   {"laser": false}
 </pre>
-<i>Example of LMD routine programmed with JASON commands.</i>
-<h3>Getting Started</h3>
-<p>You only must install ROS and clone OpenLMD projects on your computer.</p>
-<p>When the instalation have been completed, you only need to download any bag
-  file availble on ZENODO to test the software.</p>
+        <i>Example of LMD routine programmed with JASON commands.</i>
+        <h3>Getting Started</h3>
+        <p>You only must install ROS and clone OpenLMD projects on your computer.</p>
+        <p>When the instalation have been completed, you only need to download any bag
+          file availble on ZENODO to test the software.</p>
 <pre>
   <code>$ roscore</code>
   <code>$ rosrun rosbag play file.bag --clock</code>
   <code>$ roslaunch aimen_workcell workcell.launch sim:=true</code>
 </pre>
-<h3><a name="contact"></a>Contact</h3>
-<p>Jorge Rodríguez-Araújo (<a href="https://github.com/jraraujo-aimen" class="user-mention">@jraraujo-aimen</a>)</p>
-<hr/>
-<p>Copyright 2016 - <a href="http://www.aimen.es/">AIMEN Technology Center</a></p>
-        </section>
-        <aside id="sidebar"><ul style="list-style-type: none;">
-          <li style="font-size:14px;"><a href="index.html"><img src="images/l.png" width="24px"/> Main</a></li>
-          <li style="font-size:14px;"><a href="aimen.html"><img src="images/aimen/a.png" width="24px"/> Equipment</a></li>
-          <li style="font-size:14px;"><a href="etna.html"><img src="images/etna/e.png" width="24px"/> Triangulation</a></li>
-          <li style="font-size:14px;"><a href="mashes.html"><img src="images/mashes/m.png" width="24px"/> Multimodal</a></li>
-          <li style="font-size:14px;"><a href="robpath.html"><img src="images/robpath/r.png" width="24px"/> Planning</a></li>
-          <li style="font-size:14px;"><a href="cladplus.html"><img src="images/cladplus/+.png" width="24px"/> Control</a></li>
-          <li style="font-size:14px;"><a href="proper.html"><img src="images/proper/p.png" width="24px"/> Adaptive</a></li>
-          <li style="font-size:14px;"><a href="cyplam.html"><img src="images/cyplam/c.png" width="24px"/> Data</a></li>
-        </ul></aside>
+        <h3><a name="contact"></a>Contact</h3>
+        <p>Jorge Rodríguez-Araújo (<a href="https://github.com/jraraujo-aimen" class="user-mention">@jraraujo-aimen</a>)</p>
+        <hr/>
+        <p>Copyright 2016 - <a href="http://www.aimen.es/">AIMEN Technology Center</a></p>
       </div>
     </div>
     <script>

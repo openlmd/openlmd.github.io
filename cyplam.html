@@ -19,52 +19,52 @@
         <a href="https://github.com/openlmd" class="button"><small>Source Code on</small> GitHub</a>
       </div>
     </header>
+    <br><div style="padding-top: 50;"><center>
+      <a href="index.html" title="Main page" style="padding:10"><img src="images/l.png" width="32px"/></a>
+      <a href="aimen.html" title="Machine integration" style="padding:10"><img src="images/aimen/a.png" width="32px"/></a>
+      <a href="etna.html" title="3D triangulation" style="padding:10"><img src="images/etna/e.png" width="32px"/></a>
+      <a href="mashes.html" title="Multimodal monitoring" style="padding:10"><img src="images/mashes/m.png" width="32px"/></a>
+      <a href="robpath.html" title="Off-line path planning" style="padding:10"><img src="images/robpath/r.png" width="32px"/></a>
+      <a href="cladplus.html" title="Closed-loop control" style="padding:10"><img src="images/cladplus/+.png" width="32px"/></a>
+      <a href="proper.html" title="Adaptive path planning" style="padding:10"><img src="images/proper/p.png" width="32px"/></a>
+      <a href="cyplam.html" title="Bit data analysis" style="padding:10"><img src="images/cyplam/c.png" width="32px"/></a>
+    </center></div>
     <div id="content-wrapper">
       <div class="inner clearfix">
-        <section id="main-content">
-          <h2>Big Data Registering</h2>
-          <p>The high bandwidth of the multimodal monitoring approach demands effective
-            mechanisms to record and manage such a big data. Thus data are recorded in
-            bag files (parameters in yaml files), and they are processed after that to
-            provide a better way for analysis.</p>
-          <table>
-          <tr><td style="width:10%"><a href="https://github.com/openlmd/cyplam">
-            <img src="images/cyplam/c.png" width="48px"/></a></td>
-            <td style="padding:5px;text-align:left">Software shared in OpenLMD is intended
-            for research, even so, it is being tested on an industrial facility.</td></tr>
-          </table>
-          <br>
-          <p>Bag files are a good way to reproduce the system performance enabling the
-            development of new modules and features as if it was the real facility.
-            However, it is not a good solution to search and analyse data.</p>
-          <p><center><a href="images/cyplam/rqt_bag.png"><img src="images/cyplam/rqt_bag.png"/></a><br>
-          <i>Exploring multiespectral recorded bag data with the rqt_bag tool.</i></center></p>
-          <p>To provide a better way for data analytics, bag files are parsed and stored
-            in HDF5 files as Pandas dataframes. A dataframe is created for each rostopic
-            namespace (e.g. /tachyon, /camera, /robot) using the message timestamp to
-            correlate data.</p>
-          <h3>Getting Started</h3>
-          <p>You only must install ROS and clone OpenLMD projects on your computer, and
-            download any bag file available on ZENODO to test the software.</p>
-          <pre>
-            <code>$ roscd cyplam_data/src/data/</code>
-            <code>$ python analysis.py -f filename.bag</code>
-          </pre>
-          <h3>Contact</h3>
-          <p>Jorge Rodríguez-Araújo (<a href="https://github.com/jraraujo-aimen" class="user-mention">@jraraujo-aimen</a>)</p>
-          <hr/>
-          <p>Copyright 2016 - <a href="http://www.aimen.es/">AIMEN Technology Center</a></p>
-        </section>
-        <aside id="sidebar"><ul style="list-style-type: none;">
-          <li style="font-size:14px;"><a href="index.html"><img src="images/l.png" width="24px"/> Main</a></li>
-          <li style="font-size:14px;"><a href="aimen.html"><img src="images/aimen/a.png" width="24px"/> Equipment</a></li>
-          <li style="font-size:14px;"><a href="etna.html"><img src="images/etna/e.png" width="24px"/> Triangulation</a></li>
-          <li style="font-size:14px;"><a href="mashes.html"><img src="images/mashes/m.png" width="24px"/> Multimodal</a></li>
-          <li style="font-size:14px;"><a href="robpath.html"><img src="images/robpath/r.png" width="24px"/> Planning</a></li>
-          <li style="font-size:14px;"><a href="cladplus.html"><img src="images/cladplus/+.png" width="24px"/> Control</a></li>
-          <li style="font-size:14px;"><a href="proper.html"><img src="images/proper/p.png" width="24px"/> Adaptive</a></li>
-          <li style="font-size:14px;"><a href="cyplam.html"><img src="images/cyplam/c.png" width="24px"/> Data</a></li>
-        </ul></aside>
+        <h2>Big Data Registering</h2>
+        <p>The high bandwidth of the multimodal monitoring approach demands effective
+          mechanisms to record and manage such a big data. Thus data are recorded in
+          bag files (parameters in yaml files), and they are processed after that to
+          provide a better way for analysis.</p>
+        <table>
+        <tr><td style="width:10%"><a href="https://github.com/openlmd/cyplam">
+          <img src="images/cyplam/c.png" width="48px"/></a></td>
+          <td style="padding:5px;text-align:left">Software shared in OpenLMD is intended
+          for research, even so, it is being tested on an industrial facility.</td></tr>
+        </table>
+        <br>
+        <p>Bag files are a good way to reproduce the system performance enabling the
+          development of new modules and features as if it was the real facility.
+          However, it is not a good solution to search and analyse data.</p>
+        <p><center><a href="images/cyplam/rqt_bag.png"><img src="images/cyplam/rqt_bag.png" width="100%"/></a></center></p>
+        <p><center><i>Exploring multiespectral recorded bag data with the rqt_bag tool.</i></center></p>
+        <p>To provide a better way for data analytics, bag files are parsed and stored
+          in HDF5 files as Pandas dataframes. A dataframe is created for each rostopic
+          namespace (e.g. /tachyon, /camera, /robot) using the message timestamp to
+          correlate data.</p>
+        <p><center><a href="images/cyplam/cyplam.png"><img src="images/cyplam/cyplam.png" width="100%"/></a></center></p>
+        <p><center><i>Cyplam main interface for recording and direct cloud connection.</i></center></p>
+        <h3>Getting Started</h3>
+        <p>You only must install ROS and clone OpenLMD projects on your computer, and
+          download any bag file available on ZENODO to test the software.</p>
+<pre>
+  <code>$ roscd cyplam_data/src/data/</code>
+  <code>$ python analysis.py -f filename.bag</code>
+</pre>
+        <h3>Contact</h3>
+        <p>Jorge Rodríguez-Araújo (<a href="https://github.com/jraraujo-aimen" class="user-mention">@jraraujo-aimen</a>)</p>
+        <hr/>
+        <p>Copyright 2016 - <a href="http://www.aimen.es/">AIMEN Technology Center</a></p>
       </div>
     </div>
     <script>
