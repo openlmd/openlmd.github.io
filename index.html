@@ -1,169 +1,210 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link href="https://fonts.googleapis.com/css?family=Architects+Daughter" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.min.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="stylesheets/print.min.css" media="print">
-    <link rel="icon" type="image/png" href="images/l.png">
-    <title>OpenLMD by AIMEN Technology Center</title>
-  </head>
-  <body>
-    <header>
-      <div class="inner">
-        <h1><a href="index.html"><img src="images/l.png" width="90px"/></a>&nbsp;<a href="https://www.youtube.com/channel/UCYMSF6-O51Cw_CLbXHt1s9g"><img src="images/youtube.png" width="48px" style="vertical-align:middle;float:right;"/></a></h1>
-        <h1>OpenLMD</h1>
-        <h2>Opening the next generation on Laser Metal Deposition control technology</h2>
-        <a href="https://github.com/openlmd" class="button"><small>Source Code on</small> GitHub</a>
-      </div>
-    </header>
-    <br><div style="padding-top: 50;"><center>
-      <a href="index.html" title="Main page" style="padding:10"><img src="images/l.png" width="32px"/></a>
-      <a href="aimen.html" title="Machine integration" style="padding:10"><img src="images/aimen/a.png" width="32px"/></a>
-      <a href="etna.html" title="3D triangulation" style="padding:10"><img src="images/etna/e.png" width="32px"/></a>
-      <a href="mashes.html" title="Multimodal monitoring" style="padding:10"><img src="images/mashes/m.png" width="32px"/></a>
-      <a href="robpath.html" title="Off-line path planning" style="padding:10"><img src="images/robpath/r.png" width="32px"/></a>
-      <a href="cladplus.html" title="Closed-loop control" style="padding:10"><img src="images/cladplus/+.png" width="32px"/></a>
-      <a href="proper.html" title="Adaptive path planning" style="padding:10"><img src="images/proper/p.png" width="32px"/></a>
-      <a href="cyplam.html" title="Bit data analysis" style="padding:10"><img src="images/cyplam/c.png" width="32px"/></a>
-    </center></div>
-    <div id="content-wrapper">
-      <div class="inner clearfix">
-          <h2>Open Laser Metal Deposition</h2>
-          <p>OpenLMD is a novel open-source solution for on-line multimodal monitoring
-            and control of Laser Metal Deposition (LMD). The solution is also applicable
-            to a wider range of laser-based applications that require on-line control
-            (e.g. laser welding).</p>
-          <!-- <p>OpenLMD is a middleware that enables the orchestration and virtualization of
-            a LMD robot cell, using several open-source frameworks (e.g. ROS, OpenCV, PCL).
-            The solution also allows reconfiguration by easy integration of multiple sensors
-            and processing equipment. As a result, OpenLMD delivers significant advantages
-            over existing monitoring and control approaches, such as improved scalability,
-            and multimodal monitoring and data sharing capabilities.</p> -->
-          <p>As a modular set of software components provides last advances on laser
-            processing control systems and advanced robotics from a multimodal approach.
-            Built on ROS (<a href="http://www.ros.org/">Robot Operating System</a>),
-            the modular approach provided in OpenLMD pursues the deployment of new
-            algorithms beyond the state-of-the-art in real facilities, fixing common
-            interoperability and standarization issues. Moreover, it takes advantage from
-            open source and most advanced robotics, vision, and machine learning research.</p>
-          <div style="width: 100%; height: 0px; position: relative; padding-bottom: 75.0019%;">
-            <iframe src="https://www.slideshare.net/slideshow/embed_code/key/FqOxTzDoD2v2Yh"
-            frameborder="0" allowfullscreen style="width: 100%; height: 100%; position: absolute;"></iframe>
-          </div>
-          <p><center><i>
-            <a href="http://www.slideshare.net/JorgeRodrguezArajo/openlmd-open-laser-metal-deposition"
-            title="OpenLMD, Open Laser Metal Deposition" target="_blank">OpenLMD, Open Laser Metal Deposition</a> </i> from <i>
-              <a href="http://www.slideshare.net/JorgeRodrguezArajo" target="_blank">Jorge Rodríguez-Araújo</a>
-            </i></center></p>
-          <blockquote>OpenLMD enables direct deployment of complex multimodal monitoring
-            and control solutions from research to actual industrial setups.</blockquote>
-          <p>OpenLMD arises from AIMEN's development efforts on several Laser Metal
-            Deposition (LMD) projects, focus on building and repairing large and complex
-            metal parts - with no defects -. These efforts have been mainly driven by the
-            <a href="http://www.mashesproject.eu/">MAShES project</a>, the PROPER assesment
-            from the <a href="http://www.lashare.eu/">LASHARE project</a> and the CyPLAM
-            experiment from the <a href="http://www.fortissimo-project.eu/"> FORTISSIMO2
-            project</a>.</p>
-          <h3>Introduction</h3>
-          <p>Laser Metal Deposition (LMD) is an additive laser deposition technique focused
-            on direct manufacturing of metal parts, through the successive deposition of
-            melted tracks layer-by-layer, building the component directly from its CAD
-            model.</p>
-          <p>Unlike Selective Laser Melting (SLM), consisting on the deposition of powder
-            layers and their subsequent laser melt (mainly used for rapid prototyping),
-            LMD only adds the required material.</p>
-          <p>This Additive Manufacturing (AM) technique works on current processing
-            technology, known as Laser Cladding, commonly used for repair of metal
-            components. This makes LMD a promising technique for retrofitting of current
-            industrial facilities towards the digital factory (Industrie 4.0).</p>
-            <!-- La necesidad de interoperar distintos equipos dificulta el despliegue de
-            esquemas de control complejos. A través del empleo de una arquitectura
-            multiproceso basada en ROS (Robotic Operating System) se pueden mitigar ambos
-            problemas. Además, esta arquitectura proporciona mecanismos para el registro
-            de datos multimodales durante el funcionamiento del proceso, permitiendo
-            su empaquetado (como dataframes) y envío a una infraestructura de Big Data. -->
-          <h3>Subprojects</h3>
-          <table style="border-spacing:5px;border:0px;">
-          <tr><td style="width:10%"><a href="aimen.html"><img src="images/aimen/a.png" width="48px"/></a></td>
-            <td style="padding:5px;text-align:left"><a href="aimen.html">ROS-based LMD Integration</a><br>
-              Integration of AIMEN's LMD robotized cell based on ROS.</td></tr>
-          <tr><td style="width:10%"><a href="etna.html"><img src="images/etna/e.png" width="48px"/></a></td>
-            <td style="padding:5px;text-align:left"><a href="etna.html">3D Geometrical Monitoring</a><br>
-              3D on-line monitoring (point cloud) for LMD robotized cells.</td></tr>
-          <tr><td style="width:10%"><a href="mashes.html"><img src="images/mashes/m.png" width="48px"/></a></td>
-            <td style="padding:5px;text-align:left"><a href="mashes.html">Multimodal Monitoring</a><br>
-              Image-based multimodal monitoring for Laser applications.</td></tr>
-          <tr><td style="width:10%"><a href="robpath.html"><img src="images/robpath/r.png" width="48px"/></a></td>
-            <td style="padding:5px;text-align:left"><a href="robpath.html">Off-line Robot Path Planning</a><br>
-              Simple off-line path planning for robotized LMD automation.</td></tr>
-          <tr><td style="width:10%"><a href="#"><img src="images/cladplus/+.png" width="48px"/></a></td>
-            <td style="padding:5px;text-align:left"><a href="cladplus.html">Real-Time Process Control</a><br>
-              Image-based asynchronous RT close-loop control for LMD systems.</td></tr>
-          <tr><td style="width:10%"><a href="#"><img src="images/proper/p.png" width="48px"/></a></td>
-            <td style="padding:5px;text-align:left"><a href="proper.html">Adaptive LMD Process Planning</a><br>
-              Adaptive path planning for an automatic repair of large and complex metal parts.</td></tr>
-          <tr><td style="width:10%"><a href="#"><img src="images/cyplam/c.png" width="48px"/></a></td>
-            <td style="padding:5px;text-align:left"><a href="cyplam.html">Big Data Registration</a><br>
-              Big data registration for LMD adaptive parametric control (based on Big Data and Deep Learning).</td></tr>
-          </table>
-          <h3>Getting Started</h3>
-          <p>You only must install ROS and clone OpenLMD projects on your computer.</p>
-          <p>You need a computer running Ubuntu 14.04 and to install ROS Indigo
-            (<a href="http://wiki.ros.org/indigo/Installation/Ubuntu">http://wiki.ros.org/indigo/Installation/Ubuntu</a>).
-            When ROS is installed, you have to configure a ROS workspace
-            (<a href="http://wiki.ros.org/catkin/Tutorials/create_a_workspace">http://wiki.ros.org/catkin/Tutorials/create_a_workspace</a>)
-            where to clone the repositories on OpenLMD (<a href="https://github.com/openlmd">https://github.com/openlmd</a>).</p>
-          <p>Moreover, you must add the line <code>source ~/catkin_ws/devel/setup.bash</code>
-            at the end of your <code>~/.bashrc</code> file for loading your workspace by default.</p>
-          <p>When the instalation is completed, you can launch the MAShES
-            <code>workcell</code> environment:</p>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link rel="stylesheet" type="text/css" href="stylesheets/style.css">
+	<link rel="icon" type="image/png" href="images/l.png">
+	<title>OpenLMD by AIMEN Technology Center</title>
+</head>
+<body>
+	<div class="sidebar bg-mint">
+		<div class="sidebar-inner">
+			<!-- <a class="blog-logo" href="index.html" title="Open Laser Metal Deposition">
+				<img src="images/l.png" alt="OpenLMD">
+			</a> -->
+			<h1 class="blog-title">
+				<a href="index.html" title="Open Laser Metal Deposition &mdash; Jorge Rodríguez-Araújo" rel="home">Open Laser Metal Deposition</a>
+			</h1>
+			<a class="nav-toggle hidden" title="Click to view the navigation" href="#">
+				<div class="bars">
+					<div class="bar"></div>
+					<div class="bar"></div>
+					<div class="bar"></div>
+					<div class="clear"></div>
+				</div>
+				<p>
+					<span class="menu">Menu</span>
+					<span class="close">Close</span>
+				</p>
+			</a>
+			<ul class="main-menu">
+				<li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="index.html">Home</a></li>
+				<li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="aimen.html">Integration</a></li>
+				<li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="etna.html">Geometry</a></li>
+				<li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="mashes.html">Monitoring</a></li>
+				<li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="robpath.html">Additive</a></li>
+				<li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="cladplus.html">Control</a></li>
+				<li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="proper.html">Adaptive</a></li>
+				<li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="cyplam.html">Big data</a></li>
+			</ul>
+			<p style="text-align:right;" class="credits">
+				<img src="images/github.png" width="48" alt="Source Code on GitHub"><br><br>
+				<a href="https://github.com/openlmd" class="button"><small>Source Code on</small> GitHub</a>
+			</p>
+			<div class="clear"></div>
+		</div>
+	</div>
+	<ul class="mobile-menu bg-dark hidden">
+		<li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="index.html">Home</a></li>
+		<li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="aimen.html">Integration</a></li>
+		<li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="etna.html">Geometry</a></li>
+		<li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="mashes.html">Monitoring</a></li>
+		<li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="robpath.html">Additive</a></li>
+		<li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="cladplus.html">Control</a></li>
+		<li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="proper.html">Adaptive</a></li>
+		<li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="cyplam.html">Big data</a></li>
+	</ul>
+	<div class="wrapper">
+		<div class="section-inner wrapper-inner">
+			<div class="content">
+				<div class="featured-media">
+					<!--<img width="800" height="290" src="images/GitHub-Pages.png" class="attachment-post-image size-post-image wp-post-image" alt="GitHub Pages" />-->
+					<img width="800" height="290" src="images/header.jpg" class="attachment-post-image size-post-image wp-post-image" alt="OpenLMD" />
+				</div>
+				<div class="post-inner">
+					<div class="post-header">
+						<p class="post-date">November 9, 2016</p>
+						<h1 class="post-title">Open Laser Metal Deposition</h1>
+					</div>
+					<div class="post-content">
+						<p>OpenLMD is a novel <em>open-source</em> solution for on-line multimodal monitoring
+							and control of Laser Metal Deposition (LMD). The solution is also applicable
+							to a wider range of laser-based applications that require on-line control
+							(e.g. laser welding).</p>
+						<!-- <p>OpenLMD is a middleware that enables the orchestration and virtualization of
+							a LMD robot cell, using several open-source frameworks (e.g. ROS, OpenCV, PCL).
+							The solution also allows reconfiguration by easy integration of multiple sensors
+							and processing equipment. As a result, OpenLMD delivers significant advantages
+							over existing monitoring and control approaches, such as improved scalability,
+							and multimodal monitoring and data sharing capabilities.</p> -->
+						<p>Built on ROS (<a href="http://www.ros.org/">Robot Operating System</a>),
+							the modular approach provided in OpenLMD pursues the deployment of new
+							algorithms beyond the state-of-the-art in real facilities, fixing common
+							interoperability and standarization issues. Moreover, it takes advantage from
+							open source and most advanced robotics, vision, and machine learning research.</p>
+						<div style="width: 100%; height: 0px; position: relative; padding-bottom: 75.0019%;">
+							<iframe src="https://www.slideshare.net/slideshow/embed_code/key/FqOxTzDoD2v2Yh"
+							frameborder="0" allowfullscreen style="width: 100%; height: 100%; position: absolute;"></iframe>
+						</div>
+						<p><center><i>
+							<a href="http://www.slideshare.net/JorgeRodrguezArajo/openlmd-open-laser-metal-deposition"
+							title="OpenLMD, Open Laser Metal Deposition" target="_blank">OpenLMD, Open Laser Metal Deposition</a> </i> from <i>
+								<a href="http://www.slideshare.net/JorgeRodrguezArajo" target="_blank">Jorge Rodríguez-Araújo</a>
+							</i></center></p>
+						<blockquote>OpenLMD enables direct deployment of complex multimodal monitoring
+							and control solutions from research to actual industrial setups.</blockquote>
+						<p>OpenLMD arises from AIMEN's development efforts on several Laser Metal
+							Deposition (LMD) projects, focus on building and repairing large and complex
+							metal parts - with no defects -. These efforts have been mainly driven by the
+							<a href="http://www.mashesproject.eu/">MAShES project</a>, the PROPER assesment
+							from the <a href="http://www.lashare.eu/">LASHARE project</a> and the CyPLAM
+							experiment from the <a href="http://www.fortissimo-project.eu/"> FORTISSIMO2
+							project</a>.</p>
+						<h3>Introduction</h3>
+						<p>Laser Metal Deposition (LMD) is an additive laser deposition technique focused
+							on direct manufacturing of metal parts, through the successive deposition of
+							melted tracks layer-by-layer, building the component directly from its CAD
+							model.</p>
+						<p>Unlike Selective Laser Melting (SLM), consisting on the deposition of powder
+							layers and their subsequent laser melt (mainly used for rapid prototyping),
+							LMD only adds the required material.</p>
+						<p>This Additive Manufacturing (AM) technique works on current processing
+							technology, known as Laser Cladding, commonly used for repair of metal
+							components. This makes LMD a promising technique for retrofitting of current
+							industrial facilities towards the digital factory (Industrie 4.0).</p>
+							<!-- La necesidad de interoperar distintos equipos dificulta el despliegue de
+							esquemas de control complejos. A través del empleo de una arquitectura
+							multiproceso basada en ROS (Robotic Operating System) se pueden mitigar ambos
+							problemas. Además, esta arquitectura proporciona mecanismos para el registro
+							de datos multimodales durante el funcionamiento del proceso, permitiendo
+							su empaquetado (como dataframes) y envío a una infraestructura de Big Data. -->
+						<h3>Getting Started</h3>
+						<p>You only must install ROS and clone OpenLMD projects on a computer running Ubuntu 14.04.</p>
+						<ol>
+							<li>To install ROS Indigo followindg the instructions in the next link
+							(<a href="http://wiki.ros.org/indigo/Installation/Ubuntu">http://wiki.ros.org/indigo/Installation/Ubuntu</a>).</li>
+							<li>To configure a ROS workspace following the indications in
+							(<a href="http://wiki.ros.org/catkin/Tutorials/create_a_workspace">http://wiki.ros.org/catkin/Tutorials/create_a_workspace</a>).</li>
+							<li>To clone the OpenLMD repositories in (<a href="https://github.com/openlmd">https://github.com/openlmd</a>).</li>
+						</ol>
+						<p>Moreover, you must add the line <code>source ~/catkin_ws/devel/setup.bash</code>
+							at the end of your <code>~/.bashrc</code> file for loading your workspace by default.</p>
+						<p>When the instalation is completed, you can launch the MAShES
+							<code>workcell</code> environment:</p>
 <pre>
-  <code>$ roslaunch mashes_robviz robviz.launch</code>
+<code>$ roslaunch mashes_robviz robviz.launch</code>
 </pre>
-          <p>Some datasets for testing and development have been shared on ZENODO platform
-            as "Laser cladding multispectral coaxial monitoring" <!-- [https://zenodo.org/record/45664#.VuA9wUKwf6L] -->
-            (<a href="https://zenodo.org/collection/user-mashes">https://zenodo.org/collection/user-mashes</a>).</p>
-          <h3>Contact</h3>
-          <p>Jorge Rodríguez-Araújo (<a href="https://github.com/jraraujo-aimen" class="user-mention">@jraraujo-aimen</a>)
-           - <a href="https://www.linkedin.com/in/jraraujo">https://www.linkedin.com/in/jraraujo</a></p>
-          <hr/>
-          <p>Copyright 2016 - <a href="http://www.aimen.es/">AIMEN Technology Center</a></p>
-      </div>
-    </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-    <script src="javascripts/jquery-eu-cookie-law-popup.min.js"></script>
-    <script>
-      $(document).bind("user_cookie_consent_changed", function(event, object) {
-        var consent = $(object).attr('consent')
-        console.log("User consent: " +  consent);
-        if (consent) {
-          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-          })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+						<p>Some datasets for testing and development have been shared on ZENODO platform
+							as "Laser cladding multispectral coaxial monitoring"
+							(<a href="https://zenodo.org/collection/user-mashes">https://zenodo.org/collection/user-mashes</a>).</p>
+						<h3>Subprojects</h3>
+						<table style="border-spacing:5px;border:0px;">
+						<tr><td style="width:10%"><a href="aimen.html"><img src="images/aimen/a.png" width="48px"/></a></td>
+							<td style="padding:5px;text-align:left"><a href="aimen.html">ROS-based LMD Integration</a><br>
+								Integration of AIMEN's LMD robotized cell based on ROS.</td></tr>
+						<tr><td style="width:10%"><a href="etna.html"><img src="images/etna/e.png" width="48px"/></a></td>
+							<td style="padding:5px;text-align:left"><a href="etna.html">3D Geometrical Monitoring</a><br>
+								3D on-line monitoring (point cloud) for LMD robotized cells.</td></tr>
+						<tr><td style="width:10%"><a href="mashes.html"><img src="images/mashes/m.png" width="48px"/></a></td>
+							<td style="padding:5px;text-align:left"><a href="mashes.html">Multimodal Monitoring</a><br>
+								Image-based multimodal monitoring for Laser applications.</td></tr>
+						<tr><td style="width:10%"><a href="robpath.html"><img src="images/robpath/r.png" width="48px"/></a></td>
+							<td style="padding:5px;text-align:left"><a href="robpath.html">Off-line Robot Path Planning</a><br>
+								Simple off-line path planning for robotized LMD automation.</td></tr>
+						<tr><td style="width:10%"><a href="#"><img src="images/cladplus/+.png" width="48px"/></a></td>
+							<td style="padding:5px;text-align:left"><a href="cladplus.html">Real-Time Process Control</a><br>
+								Image-based asynchronous RT close-loop control for LMD systems.</td></tr>
+						<tr><td style="width:10%"><a href="#"><img src="images/proper/p.png" width="48px"/></a></td>
+							<td style="padding:5px;text-align:left"><a href="proper.html">Adaptive LMD Process Planning</a><br>
+								Adaptive path planning for an automatic repair of large and complex metal parts.</td></tr>
+						<tr><td style="width:10%"><a href="#"><img src="images/cyplam/c.png" width="48px"/></a></td>
+							<td style="padding:5px;text-align:left"><a href="cyplam.html">Big Data Registration</a><br>
+								Big data registration for LMD adaptive parametric control (based on Big Data and Deep Learning).</td></tr>
+						</table>
+						<h3>Contact</h3>
+						<p>Jorge Rodríguez-Araújo (<a href="mailto:jorge.rodriguez@aimen.es" class="user-mention">jorge.rodriguez@aimen.es</a>)
+						 - <a href="https://www.linkedin.com/in/jraraujo">https://www.linkedin.com/in/jraraujo</a></p>
+						<hr/>
+						<p>Copyright 2016 - <a href="http://www.aimen.es/">AIMEN Technology Center</a></p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+	<script src="javascripts/global.js"></script>
+	<script src="javascripts/jquery-eu-cookie-law-popup.min.js"></script>
+	<script>
+		$(document).bind("user_cookie_consent_changed", function(event, object) {
+			var consent = $(object).attr('consent')
+			console.log("User consent: " +  consent);
+			if (consent) {
+				(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+				(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+				m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+				})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-          ga('create', 'UA-80859872-1', 'auto');
-          ga('send', 'pageview');
-        }
-      });
+				ga('create', 'UA-80859872-1', 'auto');
+				ga('send', 'pageview');
+			}
+		});
 
-      $(document).euCookieLawPopup().init({
-        // cookiePolicyUrl: "privacy.html",
-        popupPosition: 'bottom',
-        colorStyle: 'default',
-        compactStyle: true,
-        popupTitle: "This website uses Google Analytics cookies",
-        popupText: "We use cookies to ensure that we give you the best experience. If you close this notice, you\'ll accept their use.",
-        buttonContinueTitle: "Got it!",
-        buttonLearnmoreTitle: "",
-        buttonLearnmoreOpenInNewWindow: true,
-        agreementExpiresInDays: 30,
-        autoAcceptCookiePolicy: true,
-        htmlMarkup: null
-      });
-    </script>
-  </body>
+		$(document).euCookieLawPopup().init({
+			// cookiePolicyUrl: "privacy.html",
+			popupPosition: 'bottom',
+			colorStyle: 'default',
+			compactStyle: true,
+			popupTitle: "This website uses Google Analytics cookies",
+			popupText: "We use cookies to ensure that we give you the best experience. If you close this notice, you\'ll accept their use.",
+			buttonContinueTitle: "Got it!",
+			buttonLearnmoreTitle: "",
+			buttonLearnmoreOpenInNewWindow: true,
+			agreementExpiresInDays: 30,
+			autoAcceptCookiePolicy: true,
+			htmlMarkup: null
+		});
+	</script>
+</body>
 </html>

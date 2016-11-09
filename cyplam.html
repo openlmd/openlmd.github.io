@@ -1,81 +1,140 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link href="https://fonts.googleapis.com/css?family=Architects+Daughter" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
-    <link rel="icon" type="image/png" href="images/l.png">
-    <title>OpenLMD by AIMEN Technology Center</title>
-  </head>
-  <body>
-    <header>
-      <div class="inner">
-        <h1><a href="index.html"><img src="images/l.png" width="90px"/></a>&nbsp;<a href="https://www.youtube.com/channel/UCYMSF6-O51Cw_CLbXHt1s9g"><img src="images/youtube.png" width="48px" style="vertical-align:middle;float:right;"/></a></h1>
-        <h1>OpenLMD</h1>
-        <h2>Opening the next generation on Laser Metal Deposition control technology</h2>
-        <a href="https://github.com/openlmd" class="button"><small>Source Code on</small> GitHub</a>
-      </div>
-    </header>
-    <br><div style="padding-top: 50;"><center>
-      <a href="index.html" title="Main page" style="padding:10"><img src="images/l.png" width="32px"/></a>
-      <a href="aimen.html" title="Machine integration" style="padding:10"><img src="images/aimen/a.png" width="32px"/></a>
-      <a href="etna.html" title="3D triangulation" style="padding:10"><img src="images/etna/e.png" width="32px"/></a>
-      <a href="mashes.html" title="Multimodal monitoring" style="padding:10"><img src="images/mashes/m.png" width="32px"/></a>
-      <a href="robpath.html" title="Off-line path planning" style="padding:10"><img src="images/robpath/r.png" width="32px"/></a>
-      <a href="cladplus.html" title="Closed-loop control" style="padding:10"><img src="images/cladplus/+.png" width="32px"/></a>
-      <a href="proper.html" title="Adaptive path planning" style="padding:10"><img src="images/proper/p.png" width="32px"/></a>
-      <a href="cyplam.html" title="Bit data analysis" style="padding:10"><img src="images/cyplam/c.png" width="32px"/></a>
-    </center></div>
-    <div id="content-wrapper">
-      <div class="inner clearfix">
-        <h2>Big Data Registering</h2>
-        <p>The high bandwidth of the multimodal monitoring approach demands effective
-          mechanisms to record and manage such a big data. Thus data are recorded in
-          bag files (parameters in yaml files), and they are processed after that to
-          provide a better way for analysis.</p>
-        <table>
-        <tr><td style="width:10%"><a href="https://github.com/openlmd/cyplam">
-          <img src="images/cyplam/c.png" width="48px"/></a></td>
-          <td style="padding:5px;text-align:left">Software shared in OpenLMD is intended
-          for research, even so, it is being tested on an industrial facility.</td></tr>
-        </table>
-        <br>
-        <p>Bag files are a good way to reproduce the system performance enabling the
-          development of new modules and features as if it was the real facility.
-          However, it is not a good solution to search and analyse data.</p>
-        <p><center><a href="images/cyplam/rqt_bag.png"><img src="images/cyplam/rqt_bag.png" width="100%"/></a></center></p>
-        <p><center><i>Exploring multiespectral recorded bag data with the rqt_bag tool.</i></center></p>
-        <p>To provide a better way for data analytics, bag files are parsed and stored
-          in HDF5 files as Pandas dataframes. A dataframe is created for each rostopic
-          namespace (e.g. /tachyon, /camera, /robot) using the message timestamp to
-          correlate data.</p>
-        <p><center><a href="images/cyplam/cyplam.png"><img src="images/cyplam/cyplam.png" width="100%"/></a></center></p>
-        <p><center><i>Cyplam main interface for recording and direct cloud connection.</i></center></p>
-        <h3>Getting Started</h3>
-        <p>You only must install ROS and clone OpenLMD projects on your computer, and
-          download any bag file available on ZENODO to test the software.</p>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link rel="stylesheet" type="text/css" href="stylesheets/style.css">
+	<link rel="icon" type="image/png" href="images/l.png">
+	<title>OpenLMD by AIMEN Technology Center</title>
+</head>
+<body>
+	<div class="sidebar bg-mint">
+		<div class="sidebar-inner">
+			<!-- <a class="blog-logo" href="index.html" title="Open Laser Metal Deposition">
+				<img src="images/l.png" alt="OpenLMD">
+			</a> -->
+			<h1 class="blog-title">
+				<a href="index.html" title="Open Laser Metal Deposition &mdash; Jorge Rodríguez-Araújo" rel="home">Open Laser Metal Deposition</a>
+			</h1>
+			<a class="nav-toggle hidden" title="Click to view the navigation" href="#">
+				<div class="bars">
+					<div class="bar"></div>
+					<div class="bar"></div>
+					<div class="bar"></div>
+					<div class="clear"></div>
+				</div>
+				<p>
+					<span class="menu">Menu</span>
+					<span class="close">Close</span>
+				</p>
+			</a>
+			<ul class="main-menu">
+				<li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="index.html">Home</a></li>
+				<li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="aimen.html">Integration</a></li>
+				<li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="etna.html">Geometry</a></li>
+				<li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="mashes.html">Monitoring</a></li>
+				<li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="robpath.html">Additive</a></li>
+				<li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="cladplus.html">Control</a></li>
+				<li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="proper.html">Adaptive</a></li>
+				<li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="cyplam.html">Big data</a></li>
+			</ul>
+			<p style="text-align:right;" class="credits">
+				<img src="images/github.png" width="48" alt="Source Code on GitHub"><br><br>
+				<a href="https://github.com/openlmd" class="button"><small>Source Code on</small> GitHub</a>
+			</p>
+			<div class="clear"></div>
+		</div>
+	</div>
+	<ul class="mobile-menu bg-dark hidden">
+		<li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="index.html">Home</a></li>
+		<li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="aimen.html">Integration</a></li>
+		<li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="etna.html">Geometry</a></li>
+		<li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="mashes.html">Monitoring</a></li>
+		<li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="robpath.html">Additive</a></li>
+		<li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="cladplus.html">Control</a></li>
+		<li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="proper.html">Adaptive</a></li>
+		<li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="cyplam.html">Big data</a></li>
+	</ul>
+	<div class="wrapper">
+		<div class="section-inner wrapper-inner">
+			<div class="content">
+				<div class="post-inner">
+					<div class="post-header">
+						<p class="post-date">November 9, 2016</p>
+						<h1 class="post-title">Big Data Registering</h1>
+					</div>
+					<div class="post-content">
+            <p>The high bandwidth of the multimodal monitoring approach demands effective
+              mechanisms to record and manage such a big data. Thus data are recorded in
+              bag files (parameters in yaml files), and they are processed after that to
+              provide a better way for analysis.</p>
+            <table>
+            <tr><td style="width:10%"><a href="https://github.com/openlmd/cyplam">
+              <img src="images/cyplam/c.png" width="48px"/></a></td>
+              <td style="padding:5px;text-align:left">Software shared in OpenLMD is intended
+              for research, even so, it is being tested on an industrial facility.</td></tr>
+            </table>
+            <br>
+            <p>Bag files are a good way to reproduce the system performance enabling the
+              development of new modules and features as if it was the real facility.
+              However, it is not a good solution to search and analyse data.</p>
+            <p><center><a href="images/cyplam/rqt_bag.png"><img src="images/cyplam/rqt_bag.png" width="100%"/></a></center></p>
+            <p><center><i>Exploring multiespectral recorded bag data with the rqt_bag tool.</i></center></p>
+            <p>To provide a better way for data analytics, bag files are parsed and stored
+              in HDF5 files as Pandas dataframes. A dataframe is created for each rostopic
+              namespace (e.g. /tachyon, /camera, /robot) using the message timestamp to
+              correlate data.</p>
+            <p><center><a href="images/cyplam/cyplam.png"><img src="images/cyplam/cyplam.png" width="100%"/></a></center></p>
+            <p><center><i>Cyplam main interface for recording and direct cloud connection.</i></center></p>
+            <h3>Getting Started</h3>
+            <p>You only must install ROS and clone OpenLMD projects on your computer, and
+              download any bag file available on ZENODO to test the software.</p>
 <pre>
   <code>$ roscd cyplam_data/src/data/</code>
   <code>$ python analysis.py -f filename.bag</code>
 </pre>
-        <h3>Contact</h3>
-        <p>Jorge Rodríguez-Araújo (<a href="https://github.com/jraraujo-aimen" class="user-mention">@jraraujo-aimen</a>)</p>
-        <hr/>
-        <p>Copyright 2016 - <a href="http://www.aimen.es/">AIMEN Technology Center</a></p>
-      </div>
-    </div>
-    <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+            <h3>Contact</h3>
+            <p>Jorge Rodríguez-Araújo (<a href="mailto:jorge.rodriguez@aimen.es" class="user-mention">jorge.rodriguez@aimen.es</a>)</p>
+            <hr/>
+            <p>Copyright 2016 - <a href="http://www.aimen.es/">AIMEN Technology Center</a></p>
+          </div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+	<script src="javascripts/global.js"></script>
+	<script src="javascripts/jquery-eu-cookie-law-popup.min.js"></script>
+	<script>
+		$(document).bind("user_cookie_consent_changed", function(event, object) {
+			var consent = $(object).attr('consent')
+			console.log("User consent: " +  consent);
+			if (consent) {
+				(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+				(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+				m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+				})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-      ga('create', 'UA-80859872-1', 'auto');
-      ga('send', 'pageview');
+				ga('create', 'UA-80859872-1', 'auto');
+				ga('send', 'pageview');
+			}
+		});
 
-    </script>
-  </body>
+		$(document).euCookieLawPopup().init({
+			// cookiePolicyUrl: "privacy.html",
+			popupPosition: 'bottom',
+			colorStyle: 'default',
+			compactStyle: true,
+			popupTitle: "This website uses Google Analytics cookies",
+			popupText: "We use cookies to ensure that we give you the best experience. If you close this notice, you\'ll accept their use.",
+			buttonContinueTitle: "Got it!",
+			buttonLearnmoreTitle: "",
+			buttonLearnmoreOpenInNewWindow: true,
+			agreementExpiresInDays: 30,
+			autoAcceptCookiePolicy: true,
+			htmlMarkup: null
+		});
+	</script>
+</body>
 </html>
