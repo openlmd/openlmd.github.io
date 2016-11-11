@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="chrome=1">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-	<link rel="stylesheet" type="text/css" href="stylesheets/style.css">
+	<link rel="stylesheet" type="text/css" href="stylesheets/style.min.css">
 	<link rel="icon" type="image/png" href="images/l.png">
 	<title>OpenLMD by AIMEN Technology Center</title>
 </head>
@@ -61,50 +61,45 @@
 			<div class="content">
 				<div class="post-inner">
 					<div class="post-header">
-						<p class="post-date">November 9, 2016</p>
-						<h1 class="post-title">Big Data Registering</h1>
+						<p class="post-date">November 11, 2016</p>
+						<h1 class="post-title">Big Data Registering <a href="https://github.com/openlmd/cyplam"><img src="images/cyplam/c.png" width="42px" align="right"></a></h1>
 					</div>
 					<div class="post-content">
             <p>The high bandwidth of the multimodal monitoring approach demands effective
               mechanisms to record and manage such a big data. Thus data are recorded in
               bag files (parameters in yaml files), and they are processed after that to
               provide a better way for analysis.</p>
-            <table>
-            <tr><td style="width:10%"><a href="https://github.com/openlmd/cyplam">
-              <img src="images/cyplam/c.png" width="48px"/></a></td>
-              <td style="padding:5px;text-align:left">Software shared in OpenLMD is intended
-              for research, even so, it is being tested on an industrial facility.</td></tr>
-            </table>
-            <br>
+						<p><center><a href="images/cyplam/cyplam.png"><img src="images/cyplam/cyplam.png" width="100%"/></a></center></p>
+	          <p><center><i>Cyplam main interface for recording and direct cloud connection.</i></center></p>
             <p>Bag files are a good way to reproduce the system performance enabling the
               development of new modules and features as if it was the real facility.
               However, it is not a good solution to search and analyse data.</p>
             <p><center><a href="images/cyplam/rqt_bag.png"><img src="images/cyplam/rqt_bag.png" width="100%"/></a></center></p>
             <p><center><i>Exploring multiespectral recorded bag data with the rqt_bag tool.</i></center></p>
-            <p>To provide a better way for data analytics, bag files are parsed and stored
+						<p>To provide a better way for data analytics, bag files are parsed and stored
               in HDF5 files as Pandas dataframes. A dataframe is created for each rostopic
               namespace (e.g. /tachyon, /camera, /robot) using the message timestamp to
               correlate data.</p>
-            <p><center><a href="images/cyplam/cyplam.png"><img src="images/cyplam/cyplam.png" width="100%"/></a></center></p>
-            <p><center><i>Cyplam main interface for recording and direct cloud connection.</i></center></p>
+						<p><center><a href="images/cyplam/dataframe.png"><img src="images/cyplam/dataframe.png" width="100%"/></a></center></p>
+						<p><center><i>Pandas dataframe used to manage data opened in a notebook.</i></center></p>
             <h3>Getting Started</h3>
             <p>You only must install ROS and clone OpenLMD projects on your computer, and
               download any bag file available on ZENODO to test the software.</p>
 <pre>
-  <code>$ roscd cyplam_data/src/data/</code>
-  <code>$ python analysis.py -f filename.bag</code>
+$ roscd cyplam_data/src/data/
+$ python analysis.py -f filename.bag
 </pre>
             <h3>Contact</h3>
             <p>Jorge Rodríguez-Araújo (<a href="mailto:jorge.rodriguez@aimen.es" class="user-mention">jorge.rodriguez@aimen.es</a>)</p>
             <hr/>
-            <p>Copyright 2016 - <a href="http://www.aimen.es/">AIMEN Technology Center</a></p>
+            <p class="small">Copyright 2016 - <a href="http://www.aimen.es/">AIMEN Technology Center</a></p>
           </div>
 				</div>
 			</div>
 		</div>
 	</div>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-	<script src="javascripts/global.js"></script>
+	<script src="javascripts/global.min.js"></script>
 	<script src="javascripts/jquery-eu-cookie-law-popup.min.js"></script>
 	<script>
 		$(document).bind("user_cookie_consent_changed", function(event, object) {
