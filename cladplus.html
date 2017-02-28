@@ -11,9 +11,6 @@
 <body>
 	<div class="sidebar bg-mint">
 		<div class="sidebar-inner">
-			<!-- <a class="blog-logo" href="index.html" title="Open Laser Metal Deposition">
-				<img src="images/l.png" alt="OpenLMD">
-			</a> -->
 			<h1 class="blog-title">
 				<a href="index.html" title="Open Laser Metal Deposition &mdash; Jorge Rodríguez-Araújo" rel="home">Open Laser Metal Deposition</a>
 			</h1>
@@ -61,11 +58,17 @@
 			<div class="content">
 				<div class="post-inner">
 					<div class="post-header">
-						<p class="post-date">November 9, 2016</p>
-						<h1 class="post-title">Closed-Loop Process Control</h1>
+						<p class="post-date">February 28, 2017</p>
+						<h1 class="post-title">Closed-Loop Laser Cladding Control</h1>
 					</div>
 					<div class="post-content">
-            <p>The closed-loop control solution bases on high-speed SWIR/MWIR coaxial monitoring.
+						<p>Laser Cladding is a complex process, which is governed by a large number
+							of parameters (e.g. powder flow rate, laser power, travel speed) which are
+							typically used to control the process properties.</p>
+						<p>Using a high speed infrared sensing camera is possible to measure the melt pool
+							geometry and control the laser power to reduce the heat input and the effects of
+							thermal and geometrical variations.</p>
+            <p>This closed-loop control solution bases on high-speed SWIR/MWIR coaxial monitoring.
               Using a cost effective camera provided by <a href="http://www.niteurope.com/">NIT Europe</a>
               which is able to provide high-speed thermal information with an uncooled solution in
               the spectral range from 1um to 5 um.</p>
@@ -73,16 +76,24 @@
             <tr><td style="width:10%"><a href="https://github.com/openlmd/cladplus">
               <img src="images/cladplus/+.png" width="48px"/></a></td>
               <td style="padding:5px;text-align:left">Software shared in OpenLMD is intended
-              for research. Contact with AIMEN for an industrial implantation.</td></tr>
+              for research and does not have any guarantee.
+							<a href="http://www.niteurope.com/contacto/?lang=en">Contact with NIT Europe for
+							commercial information.</a></td></tr>
             </table>
-            <p><center><a href="images/cladplus/cladplus.png"><img src="images/cladplus/cladplus.png" width="100%"/></a><br></center></p>
-            <p><center><i>Closed-loop control interface for laser cladding.</i></center></p>
+						<br>
+						<div style="width: 100%; height: 0px; position: relative; padding-bottom: 75.0019%;">
+							<iframe src="https://www.youtube.com/embed/UBkpy7_ukrA" frameborder="0"
+							allowfullscreen style="width: 100%; height: 100%; position: absolute;"></iframe>
+						</div>
+						<p><center><i>OpenLMD enables closed-loop power control of laser cladding.</i></center></p>
             <h3>Introduction</h3>
             <p>A simple PI controller is fed by the geometrical measurement calculated from the
               MWIR image. This measurements assumes that the melt pool can be estimated as an
               elliptical shape.
             <p><center><a href="images/cladplus/controller.png"><img src="images/cladplus/controller.png" width="60%"/></a><br></center></p>
             <p><center><i>Controller block diagram based on an incremental PI.</i></center></p>
+						<p><center><a href="images/cladplus/cladplus.png"><img src="images/cladplus/cladplus.png" width="100%"/></a><br></center></p>
+						<p><center><i>Closed-loop control interface for laser cladding.</i></center></p>
             <p></p>
             <h3>Contact</h3>
             <p>Jorge Rodríguez-Araújo (<a href="mailto:jorge.rodriguez@aimen.es" class="user-mention">jorge.rodriguez@aimen.es</a>)</p>
